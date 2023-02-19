@@ -1,0 +1,43 @@
+@use '../Layout/global_content' as *;
+@use '../Layout/variables' as *;
+
+.signup-header{
+  text-align: center;
+  margin: 100px 0 20px;
+  .logo{
+    width: 320px;
+    img{
+      width: 100%;
+      max-width: 320px;
+      @media (max-width: 768px) {
+        width: 200px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.signup{
+  margin: 0 20px 50px;
+  &__input{
+    border: 1px solid rgba($color: #000000, $alpha: .1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    margin: 5px 0 15px;
+  }
+  .button{
+    &--primary{
+      margin-top: 10px;
+      width: fit-content;
+      background-color: $main-color;
+      color: white;
+      &:hover{
+        background-color: $main-color-light;
+      }
+    }
+  }
+}

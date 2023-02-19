@@ -25,6 +25,8 @@
   padding: 10px 27px;
   border: 0;
   transition: .3s;
+  cursor: pointer;
+  text-decoration: none;
   &--secondary, &--primary, &--tertiary{
     @extend #{$parent};
   }

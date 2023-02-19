@@ -16,42 +16,101 @@
   <body>
 
     <nav class="position-sticky top-0">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
-          <div class="nav__logo">
-            <a href="index.html"><img src="assets/images/eraasoft.png" class="w-100" alt="" /></a>
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <ul class="nav__list list-unstyled d-flex align-items-center m-0 gap-4 ft--18">
-            <li class="nav__item"><a  href="index.html">الرئيسية</a></li>
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
+            <li class="nav__item"><a href="index.html">الرئيسية</a></li>
             <li class="nav__item">
-              <a class="" href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
-              <div class="nav__blog">
-                
-              </div>
+              <a class="" href="">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
             </li>
             <li class="nav__item"><a class="" href="">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a></li>
             <li class="nav__item"><a class="" href="">من نحن</a></li>
             <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
           </ul>
-          <div class="nav__left d-flex align-items-center">
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-heart"></i> تبرع
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center position-relative">
             <div class="nav__search">
               <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="nav__search-input">
+                <form action="">
+                  <input type="text" placeholder="بحث...">
+                </form>
+              </div>
             </div>
-            <button class="button--secondary">تسجيل الدخول</button>
-            <button class="button--primary">انشئ حساب</button>
+            <div class="nav__buttons">
+              <button class="button--secondary">تسجيل الدخول</button>
+              <button class="button--primary">انشئ حساب</button>
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
     <section class="side-img d-none d-md-block">
-      <div class="container">
+      <div class="container-fluid container-md">
         <img src="assets/images/03.png" class="side-img__2" alt="">
       </div>
     </section>
 
     <main class="main-section center--content">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row align-items-center">
           <div class="main-section__text-cont col-12 col-lg-6 line-45">
             <h1 class="main-section__title ft--50">
@@ -84,7 +143,7 @@
     </section>
 
     <section class="site-sec strategy">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6">
             <img src="assets/images/main-1.png" class="w-100" alt="">
@@ -103,7 +162,7 @@
     </section>
 
     <section class="reviews text-center">
-      <div class="container position-relative">
+      <div class="container-fluid container-md position-relative">
         <h2 class="reviews__title bold">
           اسمع من طلاب ايرا سوفت
         </h2>
@@ -217,7 +276,7 @@
     </section>
 
     <section class="features line-45">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
           <div class="features__image col-12 col-lg-6">
             <img src="assets/images/main-2.png" class="" alt="">
@@ -238,7 +297,7 @@
     </section>
 
     <section class="instructors">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="instructors__list">
           <div class="instructors__cont">
             <div class="instructors__image">
@@ -278,7 +337,7 @@
     </section>
 
     <section class="why line-45">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row justify-content-between align-items-stretch">
           <h1 class="why__title bold">لماذا ايرا سوفت!</h1>
           <div class="why__group col-lg-4 d-flex flex-column justify-content-between">
@@ -423,7 +482,7 @@
     </section>
 
     <section class="goals line-45">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
           <div class="goals__img col-12 col-lg-6 center--content">
             <img src="assets/images/main-4.png" class="w-100" alt="">
@@ -443,7 +502,7 @@
     </section>
 
     <section class="goals-2">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row">
           <div class="goals-2__right col-lg-6 pe-lg-5">
             <p class="goals-2__text line-45">
@@ -512,7 +571,7 @@
     </section>
 
     <section class="features-2 line-45">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
           <div class="features__image col-12 col-lg-6">
             <img src="assets/images/main-6.png" class="" alt="">
@@ -538,7 +597,7 @@
     </section>
 
     <section class="statistics text-center line-45">
-      <div class="container">
+      <div class="container-fluid container-md">
         <p class="statistics__title bold">
           بدأت ايرا سوفت بحلم تسعى لتحقيقه وسوف تكمل طريق النجاح بكم ومعكم <br>
           <span class="statistics__title--colored bold">نحو جيل المليون مبرمج عربي</span>
@@ -582,7 +641,7 @@
     </section>
 
     <section class="ask">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="ask__card row">
           <div class="col-md-5 col-lg-4 ask__card-right">
             <h2 class="ask__right-title bold">
@@ -622,7 +681,7 @@
       </div>
     </section>
     <section class="questions">
-      <div class="container">
+      <div class="container-fluid container-md">
         <h2 class="questions__title">الاسئله الشائعه</h2>
         <ul class="questions__list list-unstyled">
           <li class="questions__item shadow">
@@ -685,7 +744,7 @@
             <div class="questions__single-title bold" targetId="question-5">
               <div class="questions__expand">
                 <div class="questions__sign1"></div>
-                <div class=" active"></div>
+                <div class="questions__sign2 active"></div>
               </div>
               كيف ابدأ بتعلم البرمجة في ايرا سوفت؟
             </div>
@@ -700,7 +759,7 @@
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="row justify-content-center">
           <div class="col-6 col-md-3 col-lg-3">
             <div class="footer__title bold">

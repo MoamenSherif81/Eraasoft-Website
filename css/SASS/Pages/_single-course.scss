@@ -1,0 +1,245 @@
+@use '../Layout/global_content' as *;
+@use '../Layout/variables' as *;
+
+.single-course-header{
+  padding: 120px 0;
+  background-image:url('../../../assets/images/single1.png');
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: white;
+  &__title{
+    color: #23CEDB;
+    font-size: 30px;
+  }
+  &__title2{
+    font-size: 45px;
+    margin: 15px 0 40px;
+  }
+  &__stats{
+    margin: 30px 0 0 80px;
+    img{
+      width: 27px;
+    }
+  }
+}
+
+.single-course{
+  &__course-info{
+    margin: 10px;
+    transform: translateY(-100px);
+    background-color: white;
+    box-shadow: 0px 0px 12px 0 rgba($color: #000000, $alpha: .2);
+    @media (max-width: 991px) {
+      transform: translate(0);
+    }
+  }
+  &__content-breif{
+    padding: 20px 35px;
+    li{
+      margin-bottom: 20px;
+    }
+    img{
+      width: 27px;
+      margin-left: 10px;
+    }
+  }
+  &__video{
+    cursor: pointer;
+    &:hover .single-course__play-button{
+      border: 4px solid rgba($color: white, $alpha: 1);
+      color: rgba($color: white, $alpha: 1);
+    }
+    &-placeholder{
+      position: relative;
+    }
+  }
+  &__play-button{
+    padding: 20px;
+    border: 4px solid rgba($color: white, $alpha: .8);
+    border-radius: 50%;
+    color: rgba($color: white, $alpha: .8);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 10px 0px black;
+    font-size: 30px;
+    transition: .3s;
+  }
+  &__iframe{
+    display: none;
+  }
+  &__price-cont{
+    padding-bottom: 20px;
+  }
+  &__price{
+    font-size: 24px;
+    color: $main-color;
+    margin-bottom: 15px;
+  }
+  .button--primary{
+    background-color: $main-color;
+    color: white;
+    font-size: 25px;
+    &:hover{
+      background-color: #23CEDB;
+    }
+  }
+  &__right{
+    padding: {
+      top: 50px;
+      left: 50px;
+    };
+    @media (max-width: 991px) {
+      padding: 10px;
+    }
+  }
+  &__tabs{
+    &-list{
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+    }
+    &-item{
+      padding: 24px;
+      font-size: 24px;
+      transition: .3s;
+      color: #a7a4a5;
+      cursor: pointer;
+      &.active{
+        border-bottom: 3px solid $main-color;
+      }
+      &:hover, &.active{
+        color: black;
+      }
+      @media (max-width: 1200px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__tab-info{
+    &-content{
+      display: none;
+      font-size: 20px;
+    }
+  }
+  &__instructor{
+    &-img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 30px;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 991px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &-name{
+      color: $main-color;
+      font-size: 35px;
+    }
+    &-desc{
+      font-size: 20px;
+    }
+  }
+  &__content{
+    &-title{
+      color: $main-color;
+      font-size: 16px;
+    }
+  }
+  &__course-lessons{
+    margin: 15px 0;
+  }
+  &__lesson{
+    margin: 10px 0;
+    &-header{
+      background-color: #f5f7f9;
+      padding: 16px;
+      cursor: pointer;
+    }
+    &-expand{
+      color: white;
+      background-color: $main-color;
+      width: 33px;
+      height: 30px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: .3s;
+    }
+    &-title{
+      color: $main-color;
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+    &-details{
+      height: 0;
+      overflow: hidden;
+      transition: .3s;
+      &-item{
+        cursor: pointer;
+        &:hover .single-course__lesson-details-title{
+          color: $main-color;
+        }
+        padding: {
+          right: 40px;
+          left: 16px;
+        }
+      }
+      &-title{
+        font-size: 14px;
+        transition: .3s;
+      }
+    }
+    &-count {
+      font-size: 12px;
+      color: $main-color;
+    }
+    &-done{
+      color: #c2c2c2;
+    }
+    &-free{
+      border-radius: 15px;
+      padding: 7px;
+      background-color: #9ecefa;
+      color: $main-color;
+      height: fit-content;
+      line-height: normal;
+    }
+  }
+  &__reviews{
+    &-title{
+      color: $main-color;
+    }
+    &-count{
+      line-height: normal;
+      .bar{
+        height: 8px;
+        width: 200px;
+        background-color: orange;
+        border-radius: 8px;
+      }
+    }
+    &-average{
+      font-size: 25px;
+      color: rgb(119, 119, 119);
+      font-weight: bolder;
+      &-text{
+        font-size: 16px;
+        margin: 0;
+        line-height: normal;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرئيسية - منصة ايرا سوفت</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <nav class="position-sticky top-0">
+      <div class="container-fluid container-md">
+        <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
+            <li class="nav__item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav__item">
+              <a class="" href="">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+            </li>
+            <li class="nav__item"><a class="" href="">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a></li>
+            <li class="nav__item"><a class="" href="">من نحن</a></li>
+            <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
+          </ul>
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-heart"></i> تبرع
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center position-relative">
+            <div class="nav__search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="nav__search-input">
+                <form action="">
+                  <input type="text" placeholder="بحث...">
+                </form>
+              </div>
+            </div>
+            <div class="nav__buttons">
+              <a href="login.html" class="button--secondary">تسجيل الدخول</a>
+              <a href="signup.html" class="button--primary">انشئ حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="single-course-header">
+      <div class="container-fluid container-xl">
+        <h3 class="single-course-header__title">
+          المهارات الشخصية الناعمة
+        </h3>
+        <h1 class="single-course-header__title2 bold">
+          كيف تخطط لمسارك الوظيفي
+        </h1>
+        <div class="single-course-header__reviews">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          مراجعات
+        </div>
+        <div class="single-course-header__stats d-flex">
+          <div class="single-course-header__stats d-flex align-items-center gap-3 flex-wrap">
+            <img src="assets/images/student.png" alt="">
+            <p class="m-0">+500 طالب</p>
+          </div>
+          <div class="single-course-header__stats d-flex align-items-center gap-3 flex-wrap">
+            <img src="assets/images/quiz.png" alt="">
+            <p class="m-0">22 اختبار</p>
+          </div>
+          <div class="single-course-header__stats d-flex align-items-center gap-3 flex-wrap">
+            <img src="assets/images/beginner.png" alt="">
+            <p class="m-0">مبتدئ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-course">
+      <div class="container-fluid container-xl">
+        <div class="row">
+          <div class="single-course__right col-lg-8">
+            <div class="single-course__tabs">
+              <ul class="single-course__tabs-list list-unstyled d-flex flex-wrap">
+                <li class="single-course__tabs-item active" target-id="1">وصف الدورة</li>
+                <li class="single-course__tabs-item" target-id="2">منهج الدورة</li>
+                <li class="single-course__tabs-item" target-id="3">عن المعلم</li>
+                <li class="single-course__tabs-item" target-id="4">مراجعات</li>
+              </ul>
+            </div>
+            <div class="single-course__tab-info line-45">
+              <div class="single-course__tab-info-content active" data-id="1" tab-active="true">
+                هل تتطلع إلى التقدم في حياتك المهنية، لكنك غير متأكد من أين تبدأ؟
+                ستساعدك دورة كيف تخطط لمسارك الوظيفي في التخطيط لمستقبلك وتحقيق أهدافك.
+                هل تريد أن تتعلم كيفية التعامل مع حياتك المهنية كعمل تجاري ، وبناء علامتك التجارية الشخصية؟
+                سنوضح لك كيفية البدء وإعطاء انطباع أول لا يُنسى.
+                هل عانيت مع مهارات التواصل مع الآخرين في الماضي؟
+                تغطي هذه الدورة أهم المهارات الأساسية التي تحتاجها للتواصل بشكل فعال مع الزملاء من خلفيات ثقافية وتعليمية مختلفة، وبناء علاقات عمل قوية.
+                لست متأكدًا من المسار الوظيفي المناسب لك؟
+                ستوجهك هذه الدورة عبر الخيارات المختلفة المتاحة، من كونك موظفًا إلى ريادة الأعمال، وتساعدك على تحديد المسار الذي يناسب شخصيتك وتطلعاتك.
+                هل أنت مستعد لاتخاذ خطوتك الأهم لتصبح محترفًا حقيقيًا؟
+                سنعلمك كيفية تطوير عادات وعقلية المحترف ، وكذلك كيفية إعطاء الأولوية للجودة وتحسين الذات.
+                هل أنت مهتم بالعمل الحر، لكن لا تعرف من أين تبدأ؟
+                ستوضح لك دورتنا خصوصيات وعموميات العمل الحر، بما في ذلك كيفية العثور على وظيفتك الأولى، وتحديد أسعار خدماتك، وتقديم عرض عمل.
+                أخيرًا، سنتناول التحديات الأكثر شيوعًا التي يواجها المستقلون، وسنساعدك على تطوير استراتيجيات للتغلب عليها.
+                هل أنت مستعد لتنمية حياتك المهنية وإطلاق العنان لإمكاناتك الكاملة؟
+                اشترك اليوم وابدأ في التخطيط للمستقبل الذي تريده!
+              </div>
+              <div class="single-course__tab-info-content single-course__content" data-id="2" tab-active="false">
+                <div class="single-course__content-title">
+                  محتوي الدورة
+                </div>
+                <ul class="single-course__course-lessons list-unstyled">
+                  <li class="single-course__lesson">
+                    <div class="single-course__lesson-header d-flex align-items-center gap-2">
+                      <div class="single-course__lesson-expand arrow" target-id="1">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <div class="w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="single-course__lesson-title">
+                          مقدمة دورة كيف تخطط لمسارك الوظيفي
+                        </div>
+                        <div class="single-course__lesson-count d-flex align-items-center gap-1">
+                          <div class="single-course__lesson-count-lessons">
+                            2
+                          </div>
+                          &nbsp;
+                          دروس
+                          &nbsp;|
+                          <div class="single-course__lesson-count-quizes">
+                            1
+                          </div>
+                          اختبار
+                          <div class="single-course__lesson-free">
+                            قسم كعينة
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <ul class="single-course__lesson-details list-unstyled" data-id="1" expanded = "false">
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="single-course__lesson">
+                    <div class="single-course__lesson-header d-flex align-items-center gap-2">
+                      <div class="single-course__lesson-expand arrow" target-id="1">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <div class="w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="single-course__lesson-title">
+                          مقدمة دورة كيف تخطط لمسارك الوظيفي
+                        </div>
+                        <div class="single-course__lesson-count d-flex align-items-center gap-1">
+                          <div class="single-course__lesson-count-lessons">
+                            2
+                          </div>
+                          &nbsp;
+                          دروس
+                          &nbsp;|
+                          <div class="single-course__lesson-count-quizes">
+                            1
+                          </div>
+                          اختبار
+                        </div>
+                      </div>
+                      <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <ul class="single-course__lesson-details list-unstyled" data-id="1" expanded = "false">
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="single-course__lesson">
+                    <div class="single-course__lesson-header d-flex align-items-center gap-2">
+                      <div class="single-course__lesson-expand arrow" target-id="1">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <div class="w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="single-course__lesson-title">
+                          مقدمة دورة كيف تخطط لمسارك الوظيفي
+                        </div>
+                        <div class="single-course__lesson-count d-flex align-items-center gap-1">
+                          <div class="single-course__lesson-count-lessons">
+                            2
+                          </div>
+                          &nbsp;
+                          دروس
+                          &nbsp;|
+                          <div class="single-course__lesson-count-quizes">
+                            1
+                          </div>
+                          اختبار
+                        </div>
+                      </div>
+                      <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <ul class="single-course__lesson-details list-unstyled" data-id="1" expanded = "false">
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="single-course__lesson">
+                    <div class="single-course__lesson-header d-flex align-items-center gap-2">
+                      <div class="single-course__lesson-expand arrow" target-id="1">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <div class="w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="single-course__lesson-title">
+                          مقدمة دورة كيف تخطط لمسارك الوظيفي
+                        </div>
+                        <div class="single-course__lesson-count d-flex align-items-center gap-1">
+                          <div class="single-course__lesson-count-lessons">2</div>دروس
+                          |
+                          <div class="single-course__lesson-count-quizes">1</div>اختبار
+                        </div>
+                      </div>
+                      <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                    </div>
+                    <ul class="single-course__lesson-details list-unstyled" data-id="1" expanded = "false">
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                      <li class="single-course__lesson-details-item d-flex align-items-center justify-content-between">
+                        <div class="single-course__lesson-details-title">
+                          <i class="fa-solid fa-play me-2"></i>
+                          مقدمة soft skills
+                        </div>
+                        <div class="single-course__lesson-done center--content"><i class="fa-regular fa-circle"></i></div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="single-course__tab-info-content single-course__instructor" data-id="3" tab-active="false">
+                <div class="single-course__instructor-img">
+                  <img src="assets/images/student-1.jpg" alt="">
+                </div>
+                <h2 class="single-course__instructor-name bold">م. مصطفي محفوظ</h2>
+                <p class="single-course__instructor-desc">
+                  مهندس برمجيات ذو خبرة أكثر من خمس عشرة سنة. شارك في بناء العديد من الشركات الناشئة، وعمل في كبرى الشركات الأمريكية. يمتلك خبرة واسعة في التدريس بجامعات مثل القاهرة والنيل، وله منشورات علمية في تعليم الآلة. يشغل حاليًا منصب مدير هندسة البرمجيات لشركة رائدة في مجال تصنيع الأدوية. كل هذا مع شهادات علمية مرموقة وموثقة من كبرى المؤسسات كمايكروسوفت وAWS.
+                </p>
+              </div>
+              <div class="single-course__tab-info-content single-course__reviews" data-id="4" tab-active="false">
+                <h3 class="single-course__reviews-title my-4 text-center">التقيمات و المراجعات</h3>
+                <div class="row single-course__reviews-stats">
+                  <div class="col-12 col-md-5 col-lg-6 single-course__reviews-right center--content flex-column text-center">
+                    <div class="row align-items-center mb-4 mb-md-0">
+                      <div class="col-6 col-md-12">
+                        <div class="single-course__reviews-stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="single-course__reviews-average">
+                          5.0
+                          <p class="single-course__reviews-average-text">متوسط التقييمات</p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 single-course__reviews-total">
+                        3 عدد التقييمات
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7 col-lg-6 single-course__reviews-count border-start center--content flex-column">
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="stars-count m-0">5</p>
+                      <div class="bar"></div>
+                      <p class="count m-0">3</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="stars-count m-0">4</p>
+                      <div class="bar"></div>
+                      <p class="count m-0">0</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="stars-count m-0">3</p>
+                      <div class="bar"></div>
+                      <p class="count m-0">0</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="stars-count m-0">2</p>
+                      <div class="bar"></div>
+                      <p class="count m-0">0</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="stars-count m-0">1</p>
+                      <div class="bar"></div>
+                      <p class="count m-0">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-course__left col-lg-4 position-relative">
+            <div class="single-course__course-info">
+              <div class="single-course__video">
+                <div class="single-course__video-placeholder">
+                  <img src="assets/images/Video.png" class="w-100" alt="">
+                  <div class="single-course__play-button position-absolute center--self center--content">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <iframe class="single-course__iframe w-100" data-src="//www.youtube.com/embed/2jT4Zto8gs8?autoplay=1" frameborder="0" allowfullscreen=""></iframe></iframe>    
+              </div>
+              <ul class="single-course__content-breif list-unstyled m-0">
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  44 درس
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  8 أقسام
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  19 مختصر كتابي
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  الانضمام لمجموعة دراسية حصرية
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  متابعة شخصية
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  قياس مستوى التقدم والانجاز عبر الدورة
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  إجابة من قبل المعلم على كل الأسئلة
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  فاعليات حصرية
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  شارات تميز للطلبة المتقدمين
+                </li>
+                <li>
+                  <img src="assets/images/video-lesson-1.png" alt="">
+                  اشعارات تذكير وتحفيز لإنهاء الدورة
+                </li>
+              </ul>
+              <div class="single-course__price-cont text-center">
+                <h3 class="single-course__price bold  ">400 EGP</h3>
+                <button class="single-course__button button--primary">أبدأ التعلم</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="footer__title bold">
+              تعلم
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">الدورات</a></li>
+              <li class="footer__item"><a href="">مسار الاساسيات</a></li>
+              <li class="footer__item"><a href="">مسار الواجهة الامامية</a></li>
+              <li class="footer__item"><a href="">مسار هياكل البيانات</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              تفاعل
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">المنتدي</a></li>
+              <li class="footer__item"><a href="">القاعدة المعرفية</a></li>
+              <li class="footer__item"><a href="">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              راجع
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">بنود الخدمة</a></li>
+              <li class="footer__item"><a href="">سياسة الخصوصية</a></li>
+              <li class="footer__item"><a href="">تحقق من شهادتك</a></li>
+              <li class="footer__item"><a href="">المدونة</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              عنا
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">عن ايرا سوفت</a></li>
+              <li class="footer__item"><a href="">الشراكات</a></li>
+              <li class="footer__item"><a href="">الدعم المالي</a></li>
+            </ul>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="footer__image">
+              <img src="assets/images/eraasoft.png" class="w-100" alt="">
+            </div>
+            <div class="">
+              <ul class="footer__icon-list list-unstyled d-flex gap-1 center--content">
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright text-center">
+          جميع الحقوق محفوظة لمنصة ايراسوفت <span class="footer__date"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/single-course.js"></script>
+  </body>
+</html>

@@ -35,6 +35,7 @@
     color: white;
     font-size:62px;
     font-family: "Expo Arabic Bold";
+    position: relative;
     &--blue{
       font-family: "Expo Arabic Bold";
       color: #23cedb;
@@ -73,6 +74,7 @@
   }
   &__buttons{
     font-size: 20px;
+    display: flex;
     .button{
       &--primary{
         background-color: $main-color;
@@ -91,11 +93,38 @@
         }
       }
     }
+    @media (max-width: 1200px){
+      .button{
+        &--primary{
+          font-size: 18px;
+        }
+        &--secondary{
+          width: fit-content;
+          font-size: 18px;
+        }
+      }
+    }
     @media (max-width: 991px){
       text-align: center;
+      justify-content: center;
       .button{
         &--primary{
           margin-left: 30px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      .button{
+        width: fit-content;
+        &--primary{
+          margin-left: 0;
+          margin-bottom: 20px;
+          width: fit-content;
+        }
+        &--secondary{
+          width: fit-content;
         }
       }
     }
@@ -184,6 +213,11 @@
     img{
       width: 514px;
     }
+    @media (max-width:1200px) {
+      img{
+        width: 100%;
+      }
+    }
     @media (max-width: 991px) {
       text-align: center;
       margin-bottom: 40px;
@@ -234,7 +268,20 @@
     }
   }
   @media (max-width: 768px){
-    
+    background-image: none;
+    background-color: $main-color;
+    padding: 70px 0;
+    &__cont{
+      margin-bottom: 30px;
+    }
+    &__list{
+      display: block;
+      text-align: center;
+    }
+    &__image{
+      margin: 0 auto 20px;
+      border-color: white;
+    }
   }
 }
 
@@ -250,6 +297,9 @@
         color: white;
       }
     }
+  }
+  @media (max-width: 768px){
+    padding-top: 0;
   }
 }
 
@@ -438,34 +488,39 @@
 
 .ask{
   padding: 70px 0;
-  &__card-right{
-    background-color: white;
-    box-shadow: 0px 0px 30px 0px rgba($color: black, $alpha: .2);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 50px;
-    @media (max-width: 991px) {
-      padding: 50px 20px;
-    }
-    @media (max-width: 768px) {
-      border-bottom-right-radius: 0;
-      border-top-left-radius: 15px;
-    }
-  }
-  &__card-left{
-    background-color: $main-color;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 50px;
-    color: white;
-    display: flex;
-    align-items: center;
-    @media (max-width: 991px) {
-      padding: 50px 20px;
-    }
-    @media (max-width: 768px) {
-      border-top-left-radius: 0;
+  &__card{
+    &-right{
+      background-color: white;
+      box-shadow: 0px 0px 30px 0px rgba($color: black, $alpha: .2);
+      border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
+      padding: 50px;
+      @media (max-width: 991px) {
+        padding: 50px 20px;
+      }
+      @media (max-width: 768px) {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 15px;
+      }
+    }
+    &-left{
+      background-color: $main-color;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding: 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      @media (max-width: 991px) {
+        padding: 50px 20px;
+      }
+      @media (max-width: 768px) {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin: 0;
     }
   }
   &__right-title{
@@ -649,6 +704,9 @@ footer, .footer{
 
 .side-img{
   position: relative;
+  .container-md{
+    position: relative;
+  }
   &__1{
     position: absolute;
     left: 0;
@@ -656,14 +714,15 @@ footer, .footer{
     width: 10.5vw;
     z-index: 1;
   }
-  .container{
-    position: relative;
-    .side-img__2{
-      position: absolute;
-      left: -50px;
-      top: -100px;
-      width: 170px;
-      z-index: 0;
+  
+  &__2{
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    width: 170px;
+    z-index: 0;
+    @media (max-width:1200px) {
+      left: 10px;
     }
   }
 }

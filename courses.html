@@ -16,29 +16,88 @@
   <body>
 
     <nav class="position-sticky top-0">
-      <div class="container">
+      <div class="container-fluid container-md">
         <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
-          <div class="nav__logo">
-            <a href="index.html"><img src="assets/images/eraasoft.png" class="w-100" alt="" /></a>
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <ul class="nav__list list-unstyled d-flex align-items-center m-0 gap-4 ft--18">
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
             <li class="nav__item"><a href="index.html">الرئيسية</a></li>
             <li class="nav__item">
               <a class="" href="">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
-              <div class="nav__blog">
-                
-              </div>
             </li>
             <li class="nav__item"><a class="" href="">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a></li>
             <li class="nav__item"><a class="" href="">من نحن</a></li>
             <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
           </ul>
-          <div class="nav__left d-flex align-items-center">
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-heart"></i> تبرع
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center position-relative">
             <div class="nav__search">
               <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="nav__search-input">
+                <form action="">
+                  <input type="text" placeholder="بحث...">
+                </form>
+              </div>
             </div>
-            <button class="button--secondary">تسجيل الدخول</button>
-            <button class="button--primary">انشئ حساب</button>
+            <div class="nav__buttons">
+              <button class="button--secondary">تسجيل الدخول</button>
+              <button class="button--primary">انشئ حساب</button>
+            </div>
           </div>
         </div>
       </div>

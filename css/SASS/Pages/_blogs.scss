@@ -1,0 +1,121 @@
+@use '../Layout/global_content' as *;
+@use '../Layout/variables' as *;
+
+.blogs-header{
+  padding: 100px 0;
+  background-image: url('../../../assets/images/2.svg');
+  background-color: black;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  text-align: center;
+  &__title{
+    color: white;
+    font-size: 65px;
+  }
+  &__sub-title{
+    color: $main-color;
+    font-size: 35px;
+  }
+}
+
+.blogs{
+  padding: 30px 0;
+  &__tabs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__item{
+    padding: 7px 20px;
+    border-bottom: 2px solid #8c8c8c;
+    color: #8c8c8c;
+    font-size: 20px;
+    cursor: pointer;
+    &.active{
+      border-color: $main-color;
+      color: black;
+    }
+  }
+  &__card{
+    border-radius: 10px;
+    overflow: hidden;
+    &-img-cont{
+      height: 200px;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &-body{
+      position: relative;
+      padding: 40px;
+    }
+    &-author-img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+    }
+    &-title{
+      color: $main-color;
+      font-size: 21px;
+      margin-bottom: 20px;
+    }
+    &-reading-time-cont, &-description{
+      font-size: 14px;
+      color: #696969;
+      margin-bottom: 15px;
+    }
+    &-readmore{
+      text-decoration: none;
+      color: rgb(104, 104, 104);
+      font-size: 15px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+    &-stats{
+      font-size: 12px;
+      color: #929292;
+    }
+  }
+}
+
+
+/*
+<div class="card blogs__card">
+  <img class="blogs__card-img" src="assets/images/GPT-1.png" alt="">
+  <div class="blogs__card-body">
+    <div class="blogs__card-author-img">
+      <img src="assets/images/student-1.jpg" alt="">
+    </div>
+    <h4 class="blogs__card-title">ملخص مؤتمر Flutter Forward 2023</h4>
+    <p class="blogs__card-reading-time-cont">زمن القراءه <span class="blogs__card-reading-time">5 دقائق</span></p>
+    <p class="blogs__card-description">
+      في الخامس والعشرين من يناير الماضي، انطلقت فاعليات مؤتمر  2023 Flutter Forward في مدينة نيروبي بدولة كينيا. وجاء في هذا المؤتمر آخر التحديثات التي تمت
+    </p>
+    <a href="" class="blogs__card-readmore">اقرأ المزيد <i class="fa-solid fa-angles-left"></i></a>
+    <div class="blogs__card-stats d-flex">
+      <div class="blogs__card-date-cont">
+        <i class="fa-regular fa-clock"></i>
+        <span class="blogs__card-date">2022-02-05</span>
+      </div>
+      <div class="blogs__card-comments-cont">
+        <i class="fa-regular fa-comments"></i>
+        <span class="blogs__card-date">4</span>تعليقات
+      </div>
+    </div>
+  </div>
+</div>
+*/

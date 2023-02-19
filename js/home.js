@@ -14,9 +14,6 @@ $(window).resize(() => {
   calcVideoHeight(videoIframe);
 })
 
-function calcVideoHeight(video){
-  video.height(video.width() * 9 / 16)
-}
 
 var swiper = new Swiper(".reviews__slider", {
   breakpoints: {

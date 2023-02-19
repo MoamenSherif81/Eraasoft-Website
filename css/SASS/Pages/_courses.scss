@@ -65,6 +65,7 @@
         border-radius: 5px;
         animation-name: hoverAppear;
         animation-duration: 1s;
+        pointer-events: none;
         &::after{
           content: "";
           border: 5px solid transparent{
