@@ -26,10 +26,41 @@
           </div>
           <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
             <li class="nav__item"><a href="index.html">الرئيسية</a></li>
-            <li class="nav__item">
-              <a class="" href="">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+            <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
+              <a href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__courses-cont" data-id="1">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر الدورات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      المذيد من الدورات<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__courses">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav__item"><a class="" href="">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a></li>
+            <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
+              <a href="blogs.html">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__blogs-cont" data-id="2">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر المدونات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      تابع المذيد<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__blogs">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+              
             <li class="nav__item"><a class="" href="">من نحن</a></li>
             <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
           </ul>
@@ -85,18 +116,23 @@
               </li>
             </ul>
           </div>
-          <div class="nav__left d-flex align-items-center position-relative">
+          <div class="nav__left d-flex align-items-center">
             <div class="nav__search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav__search-icon center--content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <div class="nav__search-input">
                 <form action="">
                   <input type="text" placeholder="بحث...">
                 </form>
+                <span class="nav__search-close center--content">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </span>
               </div>
             </div>
             <div class="nav__buttons">
-              <button class="button--secondary">تسجيل الدخول</button>
-              <button class="button--primary">انشئ حساب</button>
+              <a href="login.html" class="button--secondary">تسجيل الدخول</a>
+              <a href="signup.html" class="button--primary">انشئ حساب</a>
             </div>
           </div>
         </div>
@@ -672,7 +708,7 @@
                 </div>
                 <form class="ask__left-sub-form d-flex gap-0 w-100">
                   <input class="ask__input w-100" type="text" placeholder="بريدك الالكتروني">
-                  <input class="ask__submit" type="submit">
+                  <input class="ask__submit" type="submit" value="أشترك">
                 </form>
               </div>
             </div>

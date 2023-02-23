@@ -26,10 +26,41 @@
           </div>
           <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
             <li class="nav__item"><a href="index.html">الرئيسية</a></li>
-            <li class="nav__item">
-              <a class="" href="">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+            <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
+              <a href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__courses-cont" data-id="1">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر الدورات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      المذيد من الدورات<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__courses">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav__item"><a class="" href="">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a></li>
+            <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
+              <a href="blogs.html">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__blogs-cont" data-id="2">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر المدونات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      تابع المذيد<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__blogs">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+              
             <li class="nav__item"><a class="" href="">من نحن</a></li>
             <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
           </ul>
@@ -85,18 +116,23 @@
               </li>
             </ul>
           </div>
-          <div class="nav__left d-flex align-items-center position-relative">
+          <div class="nav__left d-flex align-items-center">
             <div class="nav__search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav__search-icon center--content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <div class="nav__search-input">
                 <form action="">
                   <input type="text" placeholder="بحث...">
                 </form>
+                <span class="nav__search-close center--content">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </span>
               </div>
             </div>
             <div class="nav__buttons">
-              <button class="button--secondary">تسجيل الدخول</button>
-              <button class="button--primary">انشئ حساب</button>
+              <a href="login.html" class="button--secondary">تسجيل الدخول</a>
+              <a href="signup.html" class="button--primary">انشئ حساب</a>
             </div>
           </div>
         </div>
@@ -143,231 +179,10 @@
           </div>
         </div>
         <!-- .courses .courses__course-cont.list .course -->
-        <div class="courses__courses-list">
+        <div class="courses__list">
           <div class="row">
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__course-cont col-12 col-sm-6 col-lg-4">
-              <div class="courses__course card text-left">
-                <a href=""><img class="card-img-top" src="assets/images/GPT-1.png" alt=""></a>
-                <div class="courses__course-body">
-                  <p class="courses__course-sections">6 اقسام</p>
-                  <p class="courses__course-title">
-                    <a href="">اساسيات شات جي بي تي ChatGPT</a>
-                  </p>
-                  <div class="courses__course-reviews d-flex">
-                    <div class="courses__course-reviews-stars d-flex">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                      <img src="assets/images/star.svg" alt="">
-                    </div>
-                    <div class="courses__course-reviews-count">
-                      (240)
-                    </div>
-                  </div>
-                  <div class="courses__course-instructor d-flex align-items-center gap-2">
-                    <div class="courses__course-instructor-img">
-                      <img src="assets/images/student-1.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="courses__course-instructor-name">Mostafa Mahfouz</div>
-                  </div>
-                  <div class="courses__course-description">
-                    تُعد تقنية الشات بوتس (Chatbots) شكل من أشكال الذكاء الاصطناعي التي تمكن أجهزة الحاسوب من التفاعل مع البشر...
-                  </div>
-                </div>
-              </div>
+            <div class="courses__no-course">
+              <h2>لم يتم العثور علي نتائج</h2>
             </div>
           </div>
         </div>

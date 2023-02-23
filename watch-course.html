@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرئيسية - منصة ايرا سوفت</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <nav class="position-sticky top-0">
+      <div class="container-fluid container-md">
+        <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
+            <li class="nav__item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
+              <a href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__courses-cont" data-id="1">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر الدورات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      المذيد من الدورات<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__courses">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
+              <a href="blogs.html">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__blogs-cont" data-id="2">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر المدونات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      تابع المذيد<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__blogs">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+              
+            <li class="nav__item"><a class="" href="">من نحن</a></li>
+            <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
+          </ul>
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-heart"></i> تبرع
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center">
+            <div class="nav__search">
+              <span class="nav__search-icon center--content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <div class="nav__search-input">
+                <form action="">
+                  <input type="text" placeholder="بحث...">
+                </form>
+                <span class="nav__search-close center--content">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </span>
+              </div>
+            </div>
+            <div class="nav__buttons">
+              <a href="login.html" class="button--secondary">تسجيل الدخول</a>
+              <a href="signup.html" class="button--primary">انشئ حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex video-page-main">
+      <section class="course-content">
+        <div class="course-content__header d-flex justify-content-between align-items-center">
+          <h6 class="course-content__title m-0">
+            محتوي
+          </h6>
+          <div class="course-content__close center--content">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <ul class="course-content__all-lessons-list list-unstyled">
+          <li class="course-content__lesson">
+            <div class="course-content__lesson-header">
+              <div class="d-flex justify-content-between mb-1">
+                <div class="course-content__lesson-title bold">مقدمة دوره ال ChatGPT</div>
+              </div>
+              <!-- End main lesson title -->
+            </div>
+            <!-- End lesson header -->
+          </li>
+          <!-- End lesson item -->
+          <li class="course-content__lesson">
+            <div class="course-content__lesson-header">
+              <div class="d-flex justify-content-between mb-1">
+                <div class="course-content__lesson-title bold">مقدمة دوره ال ChatGPT</div>
+                <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+              <!-- End main lesson title -->
+              <div class="course-content__lessons-cnt text-muted ft--13">
+                <span class="course-content__lessons-cnt-num me-1">4</span>
+                دروس
+              </div>
+              <!-- End lessons number -->
+            </div>
+            <!-- End lesson header -->
+            <ul class="course-content__lesson-list list-unstyled" expanded="false">
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- End lesson item -->
+          <li class="course-content__lesson">
+            <div class="course-content__lesson-header">
+              <div class="d-flex justify-content-between mb-1">
+                <div class="course-content__lesson-title bold">مقدمة دوره ال ChatGPT</div>
+                <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+              <!-- End main lesson title -->
+              <div class="course-content__lessons-cnt text-muted ft--13">
+                <span class="course-content__lessons-cnt-num me-1">4</span>
+                دروس
+              </div>
+              <!-- End lessons number -->
+            </div>
+            <!-- End lesson header -->
+            <ul class="course-content__lesson-list list-unstyled" expanded="false">
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- End lesson item -->
+          <li class="course-content__lesson">
+            <div class="course-content__lesson-header">
+              <div class="d-flex justify-content-between mb-1">
+                <div class="course-content__lesson-title bold">مقدمة دوره ال ChatGPT</div>
+                <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+              <!-- End main lesson title -->
+              <div class="course-content__lessons-cnt text-muted ft--13">
+                <span class="course-content__lessons-cnt-num me-1">4</span>
+                دروس
+              </div>
+              <!-- End lessons number -->
+            </div>
+            <!-- End lesson header -->
+            <ul class="course-content__lesson-list list-unstyled" expanded="false">
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+              <li class="course-content__lesson-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <div class="course-content__lesson-title">مقدمة دوره ال ChatGPT</div>
+                  <div class="course-content__checkbox">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="course-content__lessons-cnt text-muted ft--13">
+                  <span class="course-content__lessons-cnt-num me-1">4</span>
+                  دقائق
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- End lesson item -->
+        </ul>
+        <!-- End lessons list -->
+      </section>
+      <section class="video">
+        <div class="video__header d-flex align-items-center">
+          <a href="" class="video__course-title">
+            دوره ال Chat GPT
+          </a>
+          <i class="fa-solid fa-chevron-left video__header-icon"></i>
+          <a href="" class="video__section">
+            مقدمة دوره ال ChatGPT
+          </a>
+        </div>
+        <!-- End course title -->
+        <div class="video__title">
+          مقدمة دوره ال ChatGPT
+        </div>
+        <!-- End video title -->
+        <div class="video__cont">
+          <video id="plyr-video" class="w-100" src="assets/videos/company-video.mp4" playsinline controls></video>
+        </div>
+        <!-- End video container -->
+        <section class="comments">
+          <div class="comments__header">
+            <div class="comments__title-cont">
+              <span class="comments__count"></span>
+              تعليق
+            </div>
+          </div>
+          <ul class="comments__list list-unstyled">
+            <li class="comments__item">
+              <div class="comments__cont">
+                <div class="comments__header d-flex align-items-center">
+                  <div class="comments__img">
+                    <img src="assets/images/student-1.jpg" alt="">
+                  </div>
+                  <div class="comments__info">
+                    <h5 class="comments__name m-0">
+                      Moamen Sherif
+                    </h5>
+                    <div class="comments__date">
+                      2023-02-20
+                    </div>
+                  </div>
+                </div>
+                <div class="comments__body">
+                  جزاكم الله كل خير
+                </div>
+              </div>
+              <ul class="comments__replies list-unstyled">
+                <li class="comments__replies-item">
+                  
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="footer__title bold">
+              تعلم
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">الدورات</a></li>
+              <li class="footer__item"><a href="">مسار الاساسيات</a></li>
+              <li class="footer__item"><a href="">مسار الواجهة الامامية</a></li>
+              <li class="footer__item"><a href="">مسار هياكل البيانات</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              تفاعل
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">المنتدي</a></li>
+              <li class="footer__item"><a href="">القاعدة المعرفية</a></li>
+              <li class="footer__item"><a href="">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              راجع
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">بنود الخدمة</a></li>
+              <li class="footer__item"><a href="">سياسة الخصوصية</a></li>
+              <li class="footer__item"><a href="">تحقق من شهادتك</a></li>
+              <li class="footer__item"><a href="">المدونة</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              عنا
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">عن ايرا سوفت</a></li>
+              <li class="footer__item"><a href="">الشراكات</a></li>
+              <li class="footer__item"><a href="">الدعم المالي</a></li>
+            </ul>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="footer__image">
+              <img src="assets/images/eraasoft.png" class="w-100" alt="">
+            </div>
+            <div class="">
+              <ul class="footer__icon-list list-unstyled d-flex gap-1 center--content">
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright text-center">
+          جميع الحقوق محفوظة لمنصة ايراسوفت <span class="footer__date"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/watch-course.js"></script>
+  </body>
+</html>

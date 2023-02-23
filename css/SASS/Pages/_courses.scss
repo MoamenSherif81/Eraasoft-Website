@@ -99,7 +99,7 @@
     }
   }
 
-  &__courses-list{
+  &__list{
     margin-top: 25px; 
   }
   &__course{
@@ -146,9 +146,11 @@
       margin-bottom: 15px;
       align-items: center;
       &-stars{
-        img{
-          width: 20px;
-        }
+        color: #fab84e;
+      }
+      &-count{
+        display: flex;
+        align-items: center;
       }
     }
     &-description{
@@ -164,7 +166,13 @@
       text-overflow: ellipsis;
     }
   }
-  .courses__course-cont{
+  &__img-link{
+    min-width: 25%;
+    img{
+      width: 100%;
+    }
+  }
+  &__course-cont{
     &.list{
       width: 100%;
       .courses__course{
@@ -178,15 +186,9 @@
       }
     }
   }
-}
-
-@keyframes hoverAppear{
-  from{
-    transform: translate(-50%, 20px);
-    opacity: 0;
-  }
-  to{
-    transform: translate(-50%, 0);
-    opacity: 1;
+  &__no-course{
+    display: none;
+    color: $main-color;
+    margin: 30px 0;
   }
 }

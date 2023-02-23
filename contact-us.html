@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرئيسية - منصة ايرا سوفت</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #fafbfd;">
+
+    <nav class="position-sticky top-0">
+      <div class="container-fluid container-md">
+        <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
+            <li class="nav__item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
+              <a href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__courses-cont" data-id="1">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر الدورات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      المذيد من الدورات<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__courses">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
+              <a href="blogs.html">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a>
+              <div class="nav__dropdown-cont nav__blogs-cont" data-id="2">
+                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
+                  <h1 class="nav__dropdown-title bold">أشهر المدونات</h1>
+                  <div class="nav__dropdown-more">
+                    <a href="" class="center--content gap-2">
+                      تابع المذيد<i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav__blogs">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
+            </li>
+              
+            <li class="nav__item"><a class="" href="">من نحن</a></li>
+            <li class="nav__item"><a class="" href="">تواصل معنا</a></li>
+          </ul>
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-heart"></i> تبرع
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center">
+            <div class="nav__search">
+              <span class="nav__search-icon center--content">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <div class="nav__search-input">
+                <form action="">
+                  <input type="text" placeholder="بحث...">
+                </form>
+                <span class="nav__search-close center--content">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </span>
+              </div>
+            </div>
+            <div class="nav__buttons">
+              <a href="login.html" class="button--secondary">تسجيل الدخول</a>
+              <a href="signup.html" class="button--primary">انشئ حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="contact-us-main">
+      <div class="container">
+        <div class="contact-us-main__title">
+          المدرسة تسعد دائما بالتواصل مع جميع طلابها وتوفير الدعم والمساعدة لكافة الدارسين.
+        </div>
+        <ul class="contact-us-main__tabs list-unstyled text-center mb-0">
+          <li class="contact-us-main__item" target-form="1">انضم لفريق ايراسوفت</li>
+          <li class="contact-us-main__item" target-form="2">أرسل لفريق الدعم</li>
+          <li class="contact-us-main__item" target-form="3">تواصل معنا</li>
+        </ul>
+        <div class="contact-us-main__forms">
+          <div class="contact-us-main__form-cont" data-id="1" tab-active="true">
+            <div class="row align-items-center">
+              <div class="contact-us-main__joinus col-12 col-md-6">
+                <p class="contact-us-main__joinus-text">
+                  هل لديك الخبرة والمعرفة الكافية لتعليم البرمجة؟ هل لديك الشغف وتشاركنا رؤيتنا نحو تخريج مليون مبرمج عربي؟ إذا كانت الإجابة نعم، فمرحبًا بك في فريق المدرسة؛ حيث نغير الواقع ونعيد رسم خارطة سوق البرمجة عربيًا وعالميًا من خلال تقديم دورات منافسة، وخبرات متجددة عبر برامجنا الممتدة. اتصل بنا لتنضم لفريق عمل المدرسة، فنحن نرحب بكل الخبرات والمواهب التي تشاركنا نفس الحلم والرؤية.
+                </p>
+                <form class="contact-us-main__joinus-form d-flex flex-wrap">
+                  <div class="contact-us-main__input-cont w-100">
+                    <input class="w-100" type="text" placeholder="الاسم بالكامل">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="رقم الهاتف">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="بريد الالكتروني">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="رابط لينكدان">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="التخصص">
+                  </div>
+                  <div class="contact-us-main__input-cont w-100">
+                    <textarea class="w-100" type="text" placeholder="رسالتك"></textarea>
+                  </div>
+                  <button type="submit" class="button--primary">أنضم الأن</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <img src="assets/images/contact-us-1.png" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="contact-us-main__form-cont" data-id="2" tab-active="false">
+            <div class="row align-items-center">
+              <div class="contact-us-main__joinus col-12 col-md-6">
+                <p class="contact-us-main__joinus-text">
+                  لا داعي للقلق، فلكل مشكلة حل. إذا واجهتك أي مشكلة تقنية أو تعليمية أو لك شكوى أثناء تواجدك على المنصة، فتأكد أنك ستحصل على الدعم اللازم بأسرع ما يكون. احصل على الدعم من هنا.
+                </p>
+                <form class="contact-us-main__joinus-form d-flex flex-wrap">
+                  <div class="contact-us-main__input-cont w-100">
+                    <input class="w-100" type="text" placeholder="الاسم بالكامل">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="بريد الالكتروني">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="الهدف من الرسالة">
+                  </div>
+                  <div class="contact-us-main__input-cont w-100">
+                    <textarea class="w-100" type="text" placeholder="رسالتك"></textarea>
+                  </div>
+                  <button type="submit" class="button--primary">أرسل رسالتك</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <img src="assets/images/contact-us-2.png" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="contact-us-main__form-cont" data-id="3" tab-active="false">
+            <div class="row align-items-center">
+              <div class="contact-us-main__joinus col-12 col-md-6">
+                <p class="contact-us-main__joinus-text">
+                  سعيًا منا في التوسع لخدمة الطلاب من الناطقين بالعربية؛ فإننا في المدرسة نرحب  بالشراكات مع الجهات والمؤسسات والمتطوعين على حد سواء.
+                </p>
+                <form class="contact-us-main__joinus-form d-flex flex-wrap">
+                  <div class="contact-us-main__input-cont w-100">
+                    <input class="w-100" type="text" placeholder="الاسم بالكامل">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="الدولة">
+                  </div>
+                  <div class="contact-us-main__input-cont w-50">
+                    <input type="text" class="w-100" placeholder="رقم الهاتف">
+                  </div>
+                  <div class="contact-us-main__input-cont w-100">
+                    <input type="text" class="w-100" placeholder="بريد الالكتروني">
+                  </div>
+                  <div class="contact-us-main__input-cont w-100">
+                    <textarea class="w-100" type="text" placeholder="رسالتك"></textarea>
+                  </div>
+                  <button type="submit" class="button--primary">تواصل الأن</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <img src="assets/images/contact-us-3.png" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="feedbacks">
+      <div class="container">
+        <div class="feedbacks__cont text-center">
+          <h3 class="feedbacks__title">ساهم في تطوير ايراسوفت</h3>
+          <form action="" class="text-center">
+            <textarea class="w-100" placeholder="رأيك يهمنا! إذا كانت لديك أي اقتراحات حول كيفية تحسين أو تطوير المدرسة، فنريد أن نسمع منك. ستُساعدنا أفكارك وملاحظاتك في إنشاء تجربة تعليمية أفضل للجميع."></textarea>
+            <button class="button--primary">
+              أترك مقترحا او تعليقا
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="give-review">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="give-review__img col-12 col-md-6">
+            <img src="assets/images/contact-us-4.png" class="w-100" alt="">
+          </div>
+          <div class="give-review__form-cont col-12 col-md-6">
+            <div class="give-review__title bold">
+              شاركنا رأيك
+            </div>
+            <form action="" class="give-review__form">
+              <label class="give-review__sub-title bold">
+                كيف كانت تجربتك
+              </label>
+              <div class="give-review__stars">
+                <span class="give-review__star"><i class="fa-solid fa-star"></i></span>
+                <span class="give-review__star"><i class="fa-solid fa-star"></i></span>
+                <span class="give-review__star"><i class="fa-solid fa-star"></i></span>
+                <span class="give-review__star"><i class="fa-solid fa-star"></i></span>
+                <span class="give-review__star"><i class="fa-solid fa-star"></i></span>
+              </div>
+              <div class="give-review__input-cont">
+                <textarea class="give-review__input w-100" placeholder="أكتب رأيك في ايراسوفت"></textarea>
+              </div>
+              <div class="give-review__btn">
+                <button class="button--primary">
+                  ارسال
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-posts">
+      <div class="container">
+        <div class="page-posts__title">
+          كن طالبا فاعلا في المدرسة وانضم إلى حسابات المدرسة على كافة منصات التواصل الاجتماعي، حيث تتواصل مع الطلاب والمعلمين، و اندمج في مجتمع المدرسة المتنامي باستمرار.
+        </div>
+        <ul class="page-posts__icon-list list-unstyled d-flex center--content">
+          <li class="page-posts__icon">
+            <a href="" class="center--content">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="page-posts__icon">
+            <a href="" class="center--content">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="page-posts__icon">
+            <a href="" class="center--content">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="page-posts__icon">
+            <a href="" class="center--content">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="page-posts__icon">
+            <a href="" class="center--content">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="page-posts__list d-flex flex-column flex-wrap w-100 list-unstyled">
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="page-posts__post">
+            <div class="page-posts__post-cont">
+              <div class="page-posts__post-header">
+                <div class="page-posts__post-date-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span class="page-posts__post-date">
+                    20-02-2023
+                  </span>
+                </div>
+                <div class="page-posts__post-page">
+                  <div class="page-posts__post-page-name">
+                    EraaSoft
+                  </div>
+                  <div class="page-posts__post-page-img">
+                    <img src="assets/images/eraasoft-page.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="page-posts__post-body">
+                <div class="page-posts__post-text">
+                  𝗜𝘁'𝘀 𝘁𝗶𝗺𝗲 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽 𝘆𝗼𝘂𝗿 𝗰𝗮𝗿𝗲𝗲𝗿🚀
+                  بالتعاون مع شركة Unlimited Software House
+                  عاملين Internship هتساعدك تكون 𝗕𝗮𝗰𝗸-𝗘𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 محترف 👨🏻‍💻💪🏻
+                  وعندك كل متطلبات سوق العمل التقنيه 
+                  وده لانك بتشتغل على مشاريع عمليه بشكل كامل وبتتعلم كل المهارات المطلوبه للتوظيف فى الشركات 
+                  ال internship للناس اللى مخلص
+                </div>
+                <div class="page-posts__post-img">
+                  <img src="assets/images/page-post-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="page-posts__post-footer">
+                <div class="page-posts__post-likes-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                  <span class="page-posts__post-likes-count">20</span>
+                </div>
+                <div class="page-posts__post-comments-cont">
+                  <span class="page-posts__post-icon">
+                    <i class="fa-regular fa-comments"></i>
+                  </span>
+                  <span class="page-posts__post-comments-count">5</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="page-posts__text text-center line-45">
+          <div class="page-posts__paragraph">كما أننا نتابع كافة النقاشات التي تحمل وسوم منصة المدرسة</div>
+          <div class="page-posts__hashtags d-flex justify-content-center">
+            <div class="page-posts__hashtag">#تعلم برمجة بالعربية</div>
+            <div class="page-posts__hashtag">#مجتمع ايراسوفت</div>
+          </div>
+          <div class="page-posts__paragraph">سعيا منا في إثرائها ونشر رسالتنا والتفاعل مع مقترحاتكم.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__title bold">
+          يمكنكم التواصل معنا عبر الوسائل التالية:
+        </div>
+        <div class="contacts__info-cont">
+          <div class="contacts__info">
+            <p class="m-0">العنوان:</p>
+            <p class="m-0">5 شارع مصدق الدقي</p>
+          </div>
+          <div class="contacts__info">
+            <p class="m-0">هاتفيا:</p>
+            <p class="m-0">01068268354</p>
+          </div>
+          <div class="contacts__info">
+            <p class="m-0">أو عبر البريد الإلكتروني:</p>
+            <p class="contacts__info-email m-0">support@eraasoft.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn-more">
+      <div class="container">
+        <div class="learn-more__title bold">
+          يمكنكم التواصل معنا عبر الوسائل التالية:
+        </div>
+        <div class="learn-more__buttons">
+          <a href="" class="button--primary">تفعيل الأشعارات</a>
+          <a href="" class="button--secondary">الأشتراك في قائمتنا البريدية</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="footer__title bold">
+              تعلم
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">الدورات</a></li>
+              <li class="footer__item"><a href="">مسار الاساسيات</a></li>
+              <li class="footer__item"><a href="">مسار الواجهة الامامية</a></li>
+              <li class="footer__item"><a href="">مسار هياكل البيانات</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              تفاعل
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">المنتدي</a></li>
+              <li class="footer__item"><a href="">القاعدة المعرفية</a></li>
+              <li class="footer__item"><a href="">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              راجع
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">بنود الخدمة</a></li>
+              <li class="footer__item"><a href="">سياسة الخصوصية</a></li>
+              <li class="footer__item"><a href="">تحقق من شهادتك</a></li>
+              <li class="footer__item"><a href="">المدونة</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="footer__title bold">
+              عنا
+            </div>
+            <ul class="footer__list list-unstyled">
+              <li class="footer__item"><a href="">عن ايرا سوفت</a></li>
+              <li class="footer__item"><a href="">الشراكات</a></li>
+              <li class="footer__item"><a href="">الدعم المالي</a></li>
+            </ul>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3">
+            <div class="footer__image">
+              <img src="assets/images/eraasoft.png" class="w-100" alt="">
+            </div>
+            <div class="">
+              <ul class="footer__icon-list list-unstyled d-flex gap-1 center--content">
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="footer__icon">
+                  <a href="" class="center--content">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright text-center">
+          جميع الحقوق محفوظة لمنصة ايراسوفت <span class="footer__date"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/contact-us.js"></script>
+  </body>
+</html>

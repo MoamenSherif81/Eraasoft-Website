@@ -1,7 +1,7 @@
 @use './typography' as *;
 @use './variables' as *;
 
-@for $i from 15 through 50 {
+@for $i from 12 through 50 {
   .ft--#{$i}{
     font-size: #{$i}px;
   }
@@ -34,4 +34,15 @@
 
 .main-color{
   color: $main-color;
+}
+
+@keyframes hoverAppear{
+  from{
+    transform: translate(-50%, 20px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }
