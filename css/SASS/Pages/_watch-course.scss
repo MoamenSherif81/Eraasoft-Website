@@ -1,19 +1,46 @@
 @use '../Layout/global_content' as *;
 @use '../Layout/variables' as *;
+
 .video-page-main{
+  display: flex;
+  position: relative;
+  .sidebar-button{
+    position: fixed;
+    top: 150px;
+    right: -120px;
+    background-color: white;
+    z-index: 99;
+    width: fit-content;
+    padding: 7px 20px 7px 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 14px 0px rgba($color: #000000, $alpha: .2);
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+      right: 0;
+    }
+  }
   .course-content{
     position: sticky;
     top: 96px;
-    background-color: white;
+    background-color: #fbfafd;
     width: 370px;
     border: 1px solid rgba($color: #000000, $alpha: .1);
     height: calc(100vh - 96px);
     overflow: auto;
-    &__header, &__close{
+    z-index: 101;
+    &__close{
+      display: none;
       padding: 8px;
     }
     &__header{
       font-weight: 700;
+      padding: 16px 12px;
     }
     &__title{
       font-size: 14px;
@@ -21,18 +48,23 @@
     &__lesson{
       &-header{
         padding: 16px;
-        background-color: #f6f8fa;
         border-top: 1px solid rgba($color: #000000, $alpha: .1);
         cursor: pointer;
+      }
+      &.active {
+        .course-content__lesson-header{
+          background-color: #efefef;
+        }
       }
       &-list{
         overflow: hidden;
         padding: 0 16px;
+        padding-right: 35px;
         height: 0;
         transition: .3s;
       }
       &-item{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         cursor: pointer;
       }
     }
@@ -69,12 +101,25 @@
         top: 30px;
       }
     }
+    &__buttons{
+      margin-top: 20px;
+      .button{
+        &--secondary{
+          display: none;
+        }
+      }
+    }
   }
   .comments{
     margin: 40px 0;
-    &__item{
+    &__cont{
       border: 1px solid rgba($color: #000000, $alpha: .1);
       padding: 30px;
+    }
+    &__header{
+      color: $main-color;
+      font-size: 18px;
+      margin-bottom: 20px;
     }
     &__img{
       width: 50px;
@@ -88,6 +133,105 @@
     }
     &__date{
       color: #6c757d;
+    }
+    &__body{
+      margin: {
+        right: 65px;
+        top: 20px;
+      };
+      font-size: 18px;
+    }
+    &__reply-link{
+      cursor: pointer;
+      margin: {
+        right: 65px;
+        top: 5px;
+      }
+      font-size: 18px;
+    }
+    &__new{
+      border: 1px solid rgba($color: #000000, $alpha: .1);
+      padding: 30px;
+      &-buttons{
+        margin-top: 10px;
+        .button{
+          &--primary{
+            width: fit-content;
+            background-color: $main-color;
+            color: white;
+            &:hover{
+              background-color: $main-color-light;
+            }
+          }
+          &--secondary{
+            width: fit-content;
+            background-color: $main-color-light;
+            color: white;
+            &:hover{
+              background-color: $main-color;
+            }
+          }
+        }
+      }
+      &-form{
+        label{
+          color: $main-color;
+          margin-bottom: 10px;
+        }
+        textarea{
+          min-height: 100px;
+          padding: 10px 15px;
+        }
+      }
+      &-title{
+        color: $main-color;
+        margin-bottom: 15px;
+      }
+    }
+    &__item{
+      margin-bottom: 20px;
+    }
+    &__replies{
+      margin: {
+        right: 60px;
+        top: 20px;
+      }
+    }
+  }
+  .sidebar-button{
+    display: none;
+  }
+}
+
+@media (max-width: 991px){
+  .video-page-main{
+    display: block;
+    .course-content{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 100%;
+      max-width: 370px;
+      transform: translateX(100%);
+      transition: transform .3s;
+      &__close{
+        display: block;
+      }
+    }
+    .sidebar-button{
+      display: flex;
+    }
+    &.expanded{
+      .sidebar-button{
+        display: none;
+      }
+      .course-content{
+        transform: translate(0);
+        &__close{
+          display: block;
+        }
+      }
     }
   }
 }

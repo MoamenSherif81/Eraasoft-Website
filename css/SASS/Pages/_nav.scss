@@ -167,8 +167,9 @@ nav{
       position: absolute;
       top: calc(100% - 10px);
       background-color: white;
-      width: 85vw;
+      width: 70vw;
       max-width: 1200px;
+      max-height: calc(100vh - 96px);
       padding: 30px 50px;
       left: 50%;
       transform: translateX(-50%);
@@ -176,6 +177,10 @@ nav{
       pointer-events: none;
       &.appear{
         pointer-events: all;
+      }
+      img{
+        max-height: 200px;
+        object-fit: cover;
       }
     }
     &-title{
@@ -193,10 +198,11 @@ nav{
     margin-bottom: 20px;
     &-title{
       white-space: normal;
+      margin-top: 10px;
       a{
         color: $main-color;
         text-decoration: none;
-        font-size: 23px;
+        font-size: 18px;
       }
     }
   }

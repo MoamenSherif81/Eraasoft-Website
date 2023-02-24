@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
+ 
     <nav class="position-sticky top-0">
       <div class="container-fluid container-md">
         <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
@@ -140,8 +140,11 @@
       </div>
     </nav>
 
-    <main class="d-flex video-page-main">
-      <section class="course-content">
+    <main class="video-page-main">
+      <div class="sidebar-button">
+        اعرض المحتوي<i class="fa-solid fa-arrow-left"></i>
+      </div>
+      <section class="course-content" expanded="false">
         <div class="course-content__header d-flex justify-content-between align-items-center">
           <h6 class="course-content__title m-0">
             محتوي
@@ -151,7 +154,7 @@
           </div>
         </div>
         <ul class="course-content__all-lessons-list list-unstyled">
-          <li class="course-content__lesson">
+          <li class="course-content__lesson active">
             <div class="course-content__lesson-header">
               <div class="d-flex justify-content-between mb-1">
                 <div class="course-content__lesson-title bold">مقدمة دوره ال ChatGPT</div>
@@ -373,7 +376,7 @@
           </a>
         </div>
         <!-- End course title -->
-        <div class="video__title">
+        <div class="video__title bold">
           مقدمة دوره ال ChatGPT
         </div>
         <!-- End video title -->
@@ -381,10 +384,18 @@
           <video id="plyr-video" class="w-100" src="assets/videos/company-video.mp4" playsinline controls></video>
         </div>
         <!-- End video container -->
+        <div class="video__buttons d-flex justify-content-between">
+          <button class="video__buttons-done button--primary">
+            أكملت الاطلاع علي المحتوي
+          </button>
+          <button class="video__buttons-sidebar button--secondary">
+            Show Content
+          </button>
+        </div>
         <section class="comments">
           <div class="comments__header">
             <div class="comments__title-cont">
-              <span class="comments__count"></span>
+              <span class="comments__count me-1">2</span>
               تعليق
             </div>
           </div>
@@ -407,14 +418,89 @@
                 <div class="comments__body">
                   جزاكم الله كل خير
                 </div>
+                <p class="comments__reply-link text-muted mb-0">رد</p>
               </div>
               <ul class="comments__replies list-unstyled">
-                <li class="comments__replies-item">
-                  
+                <li class="comments__item">
+                  <div class="comments__cont">
+                    <div class="comments__header d-flex align-items-center">
+                      <div class="comments__img">
+                        <img src="assets/images/student-1.jpg" alt="">
+                      </div>
+                      <div class="comments__info">
+                        <h5 class="comments__name m-0">
+                          Moamen Sherif
+                        </h5>
+                        <div class="comments__date">
+                          2023-02-20
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__body">
+                      جزاكم الله كل خير
+                    </div>
+                  </div>
+                </li>
+                <li class="comments__item">
+                  <div class="comments__cont">
+                    <div class="comments__header d-flex align-items-center">
+                      <div class="comments__img">
+                        <img src="assets/images/student-1.jpg" alt="">
+                      </div>
+                      <div class="comments__info">
+                        <h5 class="comments__name m-0">
+                          Moamen Sherif
+                        </h5>
+                        <div class="comments__date">
+                          2023-02-20
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__body">
+                      جزاكم الله كل خير
+                    </div>
+                  </div>
                 </li>
               </ul>
             </li>
+            <li class="comments__item">
+              <div class="comments__cont">
+                <div class="comments__header d-flex align-items-center">
+                  <div class="comments__img">
+                    <img src="assets/images/student-1.jpg" alt="">
+                  </div>
+                  <div class="comments__info">
+                    <h5 class="comments__name m-0">
+                      Moamen Sherif
+                    </h5>
+                    <div class="comments__date">
+                      2023-02-20
+                    </div>
+                  </div>
+                </div>
+                <div class="comments__body">
+                  جزاكم الله كل خير
+                </div>
+                <p class="comments__reply-link text-muted mb-0">رد</p>
+              </div>
+              <ul class="comments__replies list-unstyled">
+              </ul>
+            </li>
           </ul>
+          <div class="comments__new">
+            <div class="comments__new-header">
+              <h5 class="comments__new-title">اترك تعليقا</h5>
+            </div>
+            <form class="comments__new-form">
+              <label for="">التعليق</label>
+              <textarea class="comments__textarea w-100"></textarea>
+            </form>
+            <div class="comments__new-buttons d-flex justify-content-between align-items-center">
+              <div class="button--primary">
+                أرسل التعليق
+              </div>
+            </div>
+          </div>
         </section>
       </section>
     </main>
