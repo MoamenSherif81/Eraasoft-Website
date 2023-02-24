@@ -668,7 +668,7 @@ nav {
     margin-bottom: 40px;
   }
   .features__image img {
-    width: 361px;
+    width: 100%;
   }
 }
 
