@@ -32,6 +32,13 @@ var swiper = new Swiper(".reviews__slider", {
   },
 });
 
+$(window).resize(function(){
+  swiper.update();
+ });
+ $(window).on('load', function () {
+  swiper.update();
+ });
+
 $(document).ready(() => {
   toggleFAQ(questions[0]);
 })
