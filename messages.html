@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -130,57 +131,43 @@
         <!-- End Nav -->
       </div>
     </nav>
-    
-    <section class="courses">
+
+    <div class="messages-body">
       <div class="container">
-        <div class="courses__header-container">
-          <h3 class="courses__title">الدورات</h3>
-          <div class="courses__search">
-            <input class="courses__search-input" type="text" placeholder="بحث الدورات...">
-            <div class="courses__search-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="messages d-flex">
+          <div class="messages-side">
+            <div class="messages-side__title bold">
+              الرسائل
             </div>
-          </div>
-        </div>
-        <div class="courses__shape-container">
-          <div class="courses__layout">
-            <div class="courses__layout-icon-cont layout-blocks active">
-              <div class="floating-info">
-                عرض شبكي
+            <div class="no-messages text-center mt-4">
+              <div class="no-messages__icon">
+                <i class="fa-solid fa-comment-slash"></i>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd"  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.2855094 9.76996262e-15L17.5521036 9.76996262e-15C18.9036211 9.76996262e-15 20 1.10589743 20 2.47018211L20 5.76410278C20 7.12735391 18.9036211 8.23428489 17.5521036 8.23428489L14.2855094 8.23428489C12.9329672 8.23428489 11.8365883 7.12735391 11.8365883 5.76410278L11.8365883 2.47018211C11.8365883 1.10589743 12.9329672 9.76996262e-15 14.2855094 9.76996262e-15zM2.44892104 9.76996262e-15L5.71449064 9.76996262e-15C7.06703281 9.76996262e-15 8.16341169 1.10589743 8.16341169 2.47018211L8.16341169 5.76410278C8.16341169 7.12735391 7.06703281 8.23428489 5.71449064 8.23428489L2.44892104 8.23428489C1.09637888 8.23428489 3.55271368e-15 7.12735391 3.55271368e-15 5.76410278L3.55271368e-15 2.47018211C3.55271368e-15 1.10589743 1.09637888 9.76996262e-15 2.44892104 9.76996262e-15zM2.44892104 11.7657151L5.71449064 11.7657151C7.06703281 11.7657151 8.16341169 12.8716125 8.16341169 14.2369308L8.16341169 17.5298179C8.16341169 18.8941026 7.06703281 20 5.71449064 20L2.44892104 20C1.09637888 20 3.55271368e-15 18.8941026 3.55271368e-15 17.5298179L3.55271368e-15 14.2369308C3.55271368e-15 12.8716125 1.09637888 11.7657151 2.44892104 11.7657151zM14.2855094 11.7657151L17.5521036 11.7657151C18.9036211 11.7657151 20 12.8716125 20 14.2369308L20 17.5298179C20 18.8941026 18.9036211 20 17.5521036 20L14.2855094 20C12.9329672 20 11.8365883 18.8941026 11.8365883 17.5298179L11.8365883 14.2369308C11.8365883 12.8716125 12.9329672 11.7657151 14.2855094 11.7657151z" transform="translate(2 2)"/></svg>
+              <div class="no-messages__title bold">لا توجد رسائل</div>
+              <div class="no-messages__text">عندما يكون لديك رسائل جديدة ستظهر هنا</div>
             </div>
-            <div class="courses__layout-icon-cont layout-list">
-              <div class="floating-info">
-                عرض القائمه
+          </div>
+          <div class="messages-cont d-flex flex-column">
+            <div class="messages-cont__header">
+              <label class="messages-cont__label">To:</label>
+              <input type="text" class="messages-cont__input">
+            </div>
+            <div class="messages-cont__body">
+
+            </div>
+            <div class="messages-cont__bottom">
+              <input type="text" class="messages-cont__input" placeholder="اكتب رسالتك...">
+              <div class="messages-cont__controls d-flex justify-content-end">
+                <button class="messages-cont__send center--content">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/></svg>
-            </div>
-          </div>
-          <div class="courses__filter">
-            <select name="" id="">
-              <option value="كل المعلمين" selected>كل المعلمين</option>
-              <option value="Mostafa Mahfouz">Mostafa Mahfouz</option>
-              <option value="Mahmoud Elgezawy">Mahmoud Elgezawy</option>
-              <option value="Ahmed Nasseer">Ahmed Nasseer</option>
-            </select>
-            <select name="" id="">
-              <option value="كل المعلمين" selected>ترتيب ابجدي</option>
-              <option value="جديدة">جديدة</option>
-            </select>
-          </div>
-        </div>
-        <!-- .courses .courses__course-cont.list .course -->
-        <div class="courses__list">
-          <div class="row">
-            <div class="courses__no-course">
-              <h2>لم يتم العثور علي نتائج</h2>
             </div>
           </div>
         </div>
       </div>
-    </section> 
-    
+    </div>
+
     <footer>
       <div class="container">
         <div class="row justify-content-center">
@@ -275,7 +262,8 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/courses.js"></script>
+    <script src="js/messages.js"></script>
   </body>
 </html>

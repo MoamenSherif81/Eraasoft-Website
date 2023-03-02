@@ -11,9 +11,10 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="background-color: #fafbfd;">
+  <body>
 
     <nav>
       <div class="container-fluid container-md">
@@ -131,150 +132,38 @@
       </div>
     </nav>
 
-
-    <main class="profile-page">
-      <ul class="container">
-        <section class="profile">
-          <div class="profile__info">
-            <div class="profile__img">
-              <img src="assets/images/student-1.jpg" alt="">
-            </div>
-            <div class="profile__data">
-              <h2 class="profile__name">
-                Moamen Sherif
-              </h2>
-              <div class="profile__stats d-flex flex-wrap justify-content-center">
-                <div class="profile__username">
-                  @moamensherif
-                </div>
-                <span class="mx-2"> . </span>
-                <div class="profile__date-cont">
-                  انضم <span class="profile__date">فبراير 2023</span>
-                </div>
-                <span class="mx-2"> . </span>
-                <div class="profile__activity">
-                  نشط الان
-                </div>
-              </div>
-            </div>
+    <div class="notifications-body">
+      <div class="container">
+        <section class="notifications__header d-flex justify-content-between align-items-center">
+          <h2 class="notifications__title">
+            الإشعارات
+          </h2>
+          <ul class="notifications__tabs list-unstyled m-0 d-flex">
+            <li class="notifications__tabs-item" target-id="1">غير مقروء</li>
+            <li class="notifications__tabs-item" target-id="2">مقروء</li>
+          </ul>
+        </section>
+        <section class="notifications__unread notifications__tabs-body" data-id="1" tab-active="true">
+          <ul class="notifications__list">
+            
+          </ul>
+          <div class="warning">
+            <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
+            <p class="warning__title m-0">ليس لديك اي اشعارات</p>
           </div>
-          <ul class="profile__tabs-list d-flex list-unstyled line-45 flex-wrap justify-content-center">
-            <li class="profile__tabs-item active" target-id="1">الحساب الشخصي</li>
-            <li class="profile__tabs-item" target-id="2">المنتديات</li>
-            <li class="profile__tabs-item" target-id="3">المجموعات</li>
-            <li class="profile__tabs-item" target-id="4">الدورات</li>
-          </ul>
         </section>
-
-        <section class="profile-info tab-content" data-id="1" tab-active="true">
-          <div class="profile-info__title-cont d-flex justify-content-between align-items-center">
-            <div class="profile-info__title">المعلومات الشخصية</div>
-            <button class="profile-info__edit button--primary">تعديل</button>
+        <section class="notifications__read notifications__tabs-body" data-id="2" tab-active="false">
+          <ul class="notifications__list">
+            
+          </ul>
+          <div class="warning">
+            <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
+            <p class="warning__title m-0">ليس لديك اي اشعارات</p>
           </div>
-          <table class="profile-info__table line-45 w-100">
-            <tbody>
-              <tr>
-                <td class="profile-info__table-header">الاسم الاول</td>
-                <td class="profile-info__fname">Moamen</td>
-              </tr>
-              <tr>
-                <td class="profile-info__table-header">الاسم الاخير</td>
-                <td class="profile-info__lname">Sherif</td>
-              </tr>
-              <tr>
-                <td class="profile-info__table-header">اسم المستخدم</td>
-                <td class="profile-info__username">moamensherif</td>
-              </tr>
-            <tbody>
-          </table>
         </section>
-    
-        <section class="profile-blogs tab-content" data-id="2" tab-active="false">
-          <ul class="profile-content__tabs list-unstyled">
-            <li class="profile-content__item active profile-content__item--blogs" target-id="1">نقاشاتي</li>
-            <li class="profile-content__item profile-content__item--blogs" target-id="2">ردودي</li>
-            <li class="profile-content__item profile-content__item--blogs" target-id="3">مفضلتي</li>
-          </ul>
-          <ul class="profile-content__tabs-content list-unstyled">
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="1" tab-active="true">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="2" tab-active="false">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="3" tab-active="false">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="profile-groups tab-content" data-id="3" tab-active="false">
-          <ul class="profile-content__tabs list-unstyled">
-            <li class="profile-content__item active profile-content__item--groups" target-id="1">مجموعاتي</li>
-            <li class="profile-content__item profile-content__item--groups" target-id="2">دعوات</li>
-          </ul>
-          <ul class="profile-content__tabs-content list-unstyled">
-            <li class="profile-content__item-content profile-content__item-content--groups" data-id="1" tab-active="true">
-              <div class="profile-content__title">
-                قائمة المجموعات
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--groups" data-id="2" tab-active="false">
-              <div class="profile-content__title">
-                Groups Invites
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-    
-        <section class="profile-courses tab-content" data-id="4" tab-active="false">
-    
-        </section>  
       </div>
-    </main>
-    
-    
+    </div>
+
     <footer>
       <div class="container">
         <div class="row justify-content-center">
@@ -369,7 +258,8 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/profile.js"></script>
+    <script src="js/notifications.js"></script>
   </body>
 </html>

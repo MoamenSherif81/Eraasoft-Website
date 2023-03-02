@@ -2,6 +2,7 @@
 @use '../Layout/variables' as *;
 
 .single-course-header{
+  margin-top: 96px;
   padding: 120px 0;
   background-image:url('../../../assets/images/single1.png');
   background-color: black;
@@ -255,7 +256,10 @@
 }
 
 @media (max-width: 991px){
-  .single-course{
+  .single-course-header{
+    margin-top: 72px;
+  }
+    .single-course{
     &__course-info{
       position: static;
       margin-top: 0;

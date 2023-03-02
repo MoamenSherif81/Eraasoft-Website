@@ -2,6 +2,7 @@
 @use '../Layout/variables' as *;
 
 .courses{
+  margin-top: 96px;
   background-color: #fafafc;
   padding: 70px 0;
   &__title{
@@ -86,16 +87,11 @@
     }
   }
   &__filter{
-    select{
-      padding: 10px;
-      appearance: none;
-      -webkit-appearance: none;
-      background-image: url('../../../assets/images/arrow-down.svg');
-      background-repeat: no-repeat;
-      background-position: left 1rem center;
-      padding-left: 40px;
-      border: 0.5px solid rgba($color: #c1c1c1, $alpha: .5);
-      font-size: 14px;
+    @media (max-width: 500px) {
+      text-align: center;
+      select{
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -190,5 +186,11 @@
     display: none;
     color: $main-color;
     margin: 30px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .courses{
+    margin-top: 72px;
   }
 }

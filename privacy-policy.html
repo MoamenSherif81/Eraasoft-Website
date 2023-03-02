@@ -11,9 +11,10 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="background-color: #fafbfd;">
+  <body>
 
     <nav>
       <div class="container-fluid container-md">
@@ -131,150 +132,32 @@
       </div>
     </nav>
 
-
-    <main class="profile-page">
-      <ul class="container">
-        <section class="profile">
-          <div class="profile__info">
-            <div class="profile__img">
-              <img src="assets/images/student-1.jpg" alt="">
-            </div>
-            <div class="profile__data">
-              <h2 class="profile__name">
-                Moamen Sherif
-              </h2>
-              <div class="profile__stats d-flex flex-wrap justify-content-center">
-                <div class="profile__username">
-                  @moamensherif
-                </div>
-                <span class="mx-2"> . </span>
-                <div class="profile__date-cont">
-                  انضم <span class="profile__date">فبراير 2023</span>
-                </div>
-                <span class="mx-2"> . </span>
-                <div class="profile__activity">
-                  نشط الان
-                </div>
-              </div>
-            </div>
-          </div>
-          <ul class="profile__tabs-list d-flex list-unstyled line-45 flex-wrap justify-content-center">
-            <li class="profile__tabs-item active" target-id="1">الحساب الشخصي</li>
-            <li class="profile__tabs-item" target-id="2">المنتديات</li>
-            <li class="profile__tabs-item" target-id="3">المجموعات</li>
-            <li class="profile__tabs-item" target-id="4">الدورات</li>
-          </ul>
-        </section>
-
-        <section class="profile-info tab-content" data-id="1" tab-active="true">
-          <div class="profile-info__title-cont d-flex justify-content-between align-items-center">
-            <div class="profile-info__title">المعلومات الشخصية</div>
-            <button class="profile-info__edit button--primary">تعديل</button>
-          </div>
-          <table class="profile-info__table line-45 w-100">
-            <tbody>
-              <tr>
-                <td class="profile-info__table-header">الاسم الاول</td>
-                <td class="profile-info__fname">Moamen</td>
-              </tr>
-              <tr>
-                <td class="profile-info__table-header">الاسم الاخير</td>
-                <td class="profile-info__lname">Sherif</td>
-              </tr>
-              <tr>
-                <td class="profile-info__table-header">اسم المستخدم</td>
-                <td class="profile-info__username">moamensherif</td>
-              </tr>
-            <tbody>
-          </table>
-        </section>
-    
-        <section class="profile-blogs tab-content" data-id="2" tab-active="false">
-          <ul class="profile-content__tabs list-unstyled">
-            <li class="profile-content__item active profile-content__item--blogs" target-id="1">نقاشاتي</li>
-            <li class="profile-content__item profile-content__item--blogs" target-id="2">ردودي</li>
-            <li class="profile-content__item profile-content__item--blogs" target-id="3">مفضلتي</li>
-          </ul>
-          <ul class="profile-content__tabs-content list-unstyled">
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="1" tab-active="true">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="2" tab-active="false">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--blogs" data-id="3" tab-active="false">
-              <div class="profile-content__title">
-                بداية مناقشات المنتدي
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="profile-groups tab-content" data-id="3" tab-active="false">
-          <ul class="profile-content__tabs list-unstyled">
-            <li class="profile-content__item active profile-content__item--groups" target-id="1">مجموعاتي</li>
-            <li class="profile-content__item profile-content__item--groups" target-id="2">دعوات</li>
-          </ul>
-          <ul class="profile-content__tabs-content list-unstyled">
-            <li class="profile-content__item-content profile-content__item-content--groups" data-id="1" tab-active="true">
-              <div class="profile-content__title">
-                قائمة المجموعات
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-            <li class="profile-content__item-content profile-content__item-content--groups" data-id="2" tab-active="false">
-              <div class="profile-content__title">
-                Groups Invites
-              </div>
-              <ul class="profile-content__list list-unstyled">
-                
-              </ul>
-              <div class="warning">
-                <div class="warning__icon"><i class="fa-solid fa-circle-info"></i></div>
-                <p class="warning__title m-0">لم تقم بإنشاء أي مناقشات.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-    
-        <section class="profile-courses tab-content" data-id="4" tab-active="false">
-    
-        </section>  
+    <div class="terms">
+      <div class="container">
+        <p class="terms__title bold">سياسة الخصوصية للمدرسة</p>
+        <p class="terms__text">تصف سياسة الخصوصية هذه كيفية جمع معلوماتك الشخصية واستخدامها ومشاركتها عند زيارتك أو إجراء عملية شراء من "الموقع" (Almdrasa.com)</p>
+        <p class="terms__title bold">المعلومات الشخصية التي نجمعها</p>
+        <p class="terms__text">عندما تزور الموقع ، نقوم تلقائيًا بجمع معلومات معينة حول جهازك ، بما في ذلك معلومات حول متصفح الويب وعنوان IP والمنطقة الزمنية وبعض ملفات تعريف الارتباط المثبتة على جهازك. بالإضافة إلى ذلك ، أثناء تصفحك للموقع ، نقوم بجمع معلومات حول صفحات الويب الفردية أو المنتجات التي تشاهدها ، ومواقع الويب أو مصطلحات البحث التي أحالتك إلى الموقع ، ومعلومات حول كيفية تفاعلك مع الموقع. نشير إلى هذه المعلومات التي تم جمعها تلقائيًا باسم <span class="bold">"معلومات الجهاز".</span></p>
+        <p class="terms__title bold">نقوم بجمع معلومات الجهاز باستخدام التقنيات التالية:</p>
+        <p class="terms__text">- <span class="bold">"ملفات تعريف الارتباط"</span> هي ملفات بيانات يتم وضعها على جهازك أو جهاز الكمبيوتر الخاص بك وغالبًا ما تتضمن معرفًا فريدًا مجهول الهوية. لمزيد من المعلومات حول ملفات تعريف الارتباط وكيفية تعطيل ملفات تعريف الارتباط ، قم بزيارة <a class="terms__link">http://www.allaboutcookies.org</a>.
+          <br>- إجراءات تتبع <span class="bold">"ملفات السجل"</span>> التي تحدث على الموقع ، وجمع البيانات بما في ذلك عنوان IP الخاص بك ، ونوع المتصفح ، ومزود خدمة الإنترنت.
+          <br>- <span class="bold">"إشارات الويب"</span> و <span class="bold">"العلامات"</span> و <span class="bold">"وحدات البكسل"</span> هي ملفات إلكترونية تُستخدم لتسجيل المعلومات حول كيفية تصفحك للموقع.
+        </p>
+        <p class="terms__text">بالإضافة إلى ذلك ، عند إجراء عملية شراء أو محاولة إجراء عملية شراء عبر الموقع ، فإننا نجمع معلومات معينة منك ، بما في ذلك اسمك وعنوان الفواتير ومعلومات الدفع (بما في ذلك أرقام بطاقات الائتمان وعنوان البريد الإلكتروني ورقم الهاتف(. نشير إلى هذا المعلومات باسم <span class="bold">"معلومات الطلب"</span>.</p>
+        <p class="terms__text">عندما نتحدث عن <span class="bold">"المعلومات الشخصية"</span> في سياسة الخصوصية هذه ، فإننا نتحدث عن معلومات الجهاز ومعلومات الطلب.</p>
+        <p class="terms__title bold">كيف نستخدم المعلومات الشخصية الخاصة بك؟</p>
+        <p class="terms__text">نستخدم معلومات الطلب التي نجمعها بشكل عام للوفاء بأي طلبات يتم تقديمها عبر الموقع (بما في ذلك معالجة معلومات الدفع الخاصة بك ، وتزويدك بالفواتير و / أو تأكيدات الطلبات). بالإضافة إلى ذلك ، نستخدم معلومات الطلب هذه من أجل:<br>
+          التواصل معك؛ فحص طلباتنا بحثًا عن مخاطر محتملة أو احتيال ؛ وعندما تتماشى مع التفضيلات التي شاركتها معنا ، نقم بتزويدك بالمعلومات أو الإعلانات المتعلقة بمنتجاتنا أو خدماتنا.
+        </p>
+        <p class="terms__title bold">تبادل المعلومات الشخصية الخاصة بك</p>
+        <p class="terms__text">نشارك معلوماتك الشخصية مع أطراف ثالثة لمساعدتنا في استخدام معلوماتك الشخصية ، كما هو موضح أعلاه. على سبيل المثال ، نستخدم <span class="bold">Google Analytics</span> لمساعدتنا على فهم كيفية استخدام عملائنا للموقع - يمكنك قراءة المزيد حول كيفية استخدام Google لمعلوماتك الشخصية هنا:</p>
+        <p class="terms__title bold"></p>
+        <p class="terms__text"></p>
+        <p class="terms__title bold"></p>
+        <p class="terms__text"></p>
       </div>
-    </main>
-    
-    
+    </div>
+
     <footer>
       <div class="container">
         <div class="row justify-content-center">
@@ -369,7 +252,8 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/profile.js"></script>
+    <script src="js/watch-course.js"></script>
   </body>
 </html>

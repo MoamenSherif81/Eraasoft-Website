@@ -1,0 +1,27 @@
+@use '../Layout/global_content' as *;
+@use '../Layout/variables' as *;
+
+.terms{
+  margin-top: 96px;
+  padding: 70px 0;
+  &__title, &__text{
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+  &__title{
+    color: $main-color;
+  }
+  &__text{
+    color: #4D5C6D;
+  }
+  &__link{
+    text-decoration: none;
+    color: $main-color;
+  }
+}
+
+@media (max-width: 991px) {
+  .terms{
+    margin-top: 72px;
+  }
+}

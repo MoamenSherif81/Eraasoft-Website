@@ -1,6 +1,6 @@
 let videoIframe = $('.single-course__iframe');
 let tabsContent = $('.single-course__tab-info-content');
-let tabs = $('.single-course__tabs-item');
+let tabs = '.single-course__tabs-item';
 let lessonContent = $('.single-course__lesson-expand');
 
 let urlParams = new URLSearchParams(window.location.search);

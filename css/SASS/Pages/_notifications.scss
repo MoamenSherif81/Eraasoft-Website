@@ -1,0 +1,44 @@
+@use '../Layout/variables' as *;
+@use '../Layout/global_content' as *;
+
+
+
+.notifications{
+  &-body{
+    min-height: 80vh;
+    padding-top: 30px;
+    margin-top: 96px;
+  }
+  &__header{
+    padding-bottom: 10px;
+    border-bottom: $light-border;
+  }
+  &__title{
+    color: $main-color;
+  }
+  &__tabs{
+    gap: 30px;
+    &-item{
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: .3s;
+      &.active{
+        color: $main-color;
+        border-bottom: 1px solid $main-color;
+      }
+      &:hover{
+        color: $main-color;
+      }
+    }
+    &-body{
+      padding-top: 10px;
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .notifications-body{
+    margin-top: 72px;
+  }
+}

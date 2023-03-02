@@ -54,33 +54,3 @@ $(window).resize(() => {
     $('.video-page-main').removeClass('expanded');
   }
 })
-
-let reply = document.createElement('li');
-reply.className = 'comments__new';
-reply.innerHTML = `
-<div class="comments__new-header">
-  <h5 class="comments__new-title">اترك ردا</h5>
-</div>
-<form class="comments__new-form">
-  <label for="">التعليق</label>
-  <textarea class="comments__textarea w-100"></textarea>
-</form>
-<div class="comments__new-buttons d-flex justify-content-between align-items-center">
-  <div class="comments__new-close button--secondary">
-    الفاء الرد
-  </div>
-  <div class="button--primary">
-    أرسل التعليق
-  </div>
-</div>
-`;
-
-$('.comments__reply-link').click((e) => {
-  let comment = (e.target).closest('.comments__item');
-  let replies = $(comment).find('.comments__replies');
-  replies.append(reply);
-  $('.comments__new-close').click((e) => {
-    let cont = $(e.target).closest('.comments__new');
-    cont.remove();
-  })
-})

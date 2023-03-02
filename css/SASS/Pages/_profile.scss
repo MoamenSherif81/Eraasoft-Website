@@ -2,6 +2,7 @@
 @use '../Layout/global_content' as *;
 
 .profile-page{
+  margin-top: 96px;
   min-height: calc(100vh - 120px);
   .tab-content{
     display: none;
@@ -148,19 +149,8 @@
   }
 }
 
-.no-content{
-  background-color: white;
-  border: 1px solid rgba($color: #000000, $alpha: .1);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  .error-icon{
-    background-color: #23cfda;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
+@media (max-width: 991px) {
+  .profile-page{
+    margin-top: 72px;
   }
 }

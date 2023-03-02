@@ -2,6 +2,7 @@
 @use '../Layout/variables' as *;
 
 .main-section{
+  margin-top: 96px;
   background-image: url("../assets/images/Ask.png");
   background-position: center right;
   background-size:contain;
@@ -291,6 +292,7 @@
   padding: 50px 0;
   .button{
     &--secondary{
+      background-color: white;
       color: $main-color;
       &:hover{
         background-color: $main-color-light;
@@ -428,10 +430,11 @@
         }
       }
     }
-    @media (max-width: 991px){
+    @media (max-width: 1400px){
       text-align: center;
       .button{
         &--primary{
+          margin-left: 0;
           margin-bottom: 20px;
         }
       }
@@ -724,5 +727,11 @@ footer, .footer{
     @media (max-width:1200px) {
       left: 10px;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-section{
+    margin-top: 72px;
   }
 }

@@ -32,8 +32,37 @@
   }
 }
 
+.warning{
+  background-color: white;
+  border: 1px solid rgba($color: #000000, $alpha: .1);
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: stretch;
+  &__icon{
+    background-color: #23cfda;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+  }
+  &__title{
+    padding: 10px 5px 10px 20px;
+    line-height: normal;
+  }
+}
+
 .main-color{
   color: $main-color;
+}
+
+.required{
+  color: red;
+  font-size: 20px;
+  top: 0;
 }
 
 @keyframes hoverAppear{
@@ -45,4 +74,17 @@
     transform: translate(-50%, 0);
     opacity: 1;
   }
+}
+
+select{
+  background-color: white;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('../../../assets/images/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  padding-left: 40px;
+  border: 0.5px solid rgba($color: #c1c1c1, $alpha: .5);
+  font-size: 14px;
 }

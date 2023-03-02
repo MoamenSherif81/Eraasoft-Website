@@ -2,6 +2,7 @@
 @use '../Layout/variables' as *;
 
 .contact-us-main{
+  margin-top: 96px;
   padding: 200px 0;
   background-color: black;
   &__title{
@@ -107,7 +108,7 @@
       }
     }
   }
-
+  
 }
 
 .give-review{
@@ -152,18 +153,18 @@
     }
   }
   
-.button{
-  &--primary{
-    background-color: $main-color;
-    margin: auto;
-    color: white;
-    margin-bottom: 20px;
-    &:hover{
-      background-color: $main-color-light;
+  .button{
+    &--primary{
+      background-color: $main-color;
+      margin: auto;
+      color: white;
+      margin-bottom: 20px;
+      &:hover{
+        background-color: $main-color-light;
+      }
     }
   }
-}
-
+  
 }
 
 .page-posts{
@@ -245,6 +246,7 @@
     &-img{
       width: 100%;
       img{
+        max-height: 390px;
         width: 100%;
         object-position: center;
         object-fit: cover;
@@ -325,6 +327,9 @@
 }
 
 @media (max-width: 991px) {
+  .contact-us-main{
+    margin-top: 72px;
+  }
   .page-posts{
     &__list{
       overflow: hidden;

@@ -1,8 +1,9 @@
 
 @use './SASS/Layout/global_content' as *;
+
 @use './SASS/Layout/variables' as *;
 
-@use './SASS/Pages/nav';
+@use './SASS/Layout/nav';
 
 @use './SASS/Pages/home';
 
@@ -23,3 +24,15 @@
 @use './SASS/Pages/watch-course';
 
 @use './SASS/Pages/who';
+
+@use './SASS/Pages/single-blog';
+
+@use './SASS/Pages/privacy-terms';
+
+@use './SASS/Pages/notifications';
+
+@use './SASS/Pages/messages';
+
+@use './SASS/Pages/checkout';
+
+@use './SASS/Pages/profile-edit';
