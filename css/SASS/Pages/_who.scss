@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .who-top-img{
-  margin-top: 96px;
   text-align: left;
   margin-left: 50px;
   height: 0;
@@ -189,9 +188,6 @@
 }
 
 @media (max-width: 991px){
-  .who-top-img{
-    margin-top: 72px;
-  }
   .who-main{
     padding: 100px 20px;
     background-position: center;

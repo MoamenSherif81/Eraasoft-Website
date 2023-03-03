@@ -5,6 +5,10 @@ header{
   background-color: #203154;
   color: white;
   padding: 5px;
+  position: relative;
+  display: flex;
+  z-index: 101;
+  height: 50px;
   .header{
     &__left{
       direction: ltr;
@@ -92,35 +96,33 @@ nav{
   }
   &__search{
     cursor: pointer;
+    display: flex;
+    gap: 15px;
     &-icon{
-      color: #959799;
+      font-size: 20px;
+      color: white;
     }
     &-input{
-      position: absolute;
-      width: 100%;
-      height: calc(100% - 20px);
+      width: 0;
       top: 0;
-      margin: 10px 0;
-      display: none;
       z-index: 1;
+      left: 0;
+      transition: .3s;
+      overflow: hidden;
       form{
         height: 100%;
         input{
+          border-radius: 10px;
           width: 100%;
-          height: 100%;
-          padding: 0 50px;
+          padding: 7px 15px;
           border: 0;
           outline: none;
           box-shadow: 0px 0px 12px 0px rgba($color: #000000, $alpha: .3);
         }
       }
-    }
-    &-close{
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 25px;
+      &.expanded{
+        width: 250px;
+      }
     }
   }
   &__side-nav-icon{
@@ -229,17 +231,17 @@ nav{
     color: black;
     &-icon{
       cursor: pointer;
+      color: white;
+      font-size: 20px;
     }
     &-body{
       display: none;
       background-color: white;
       position: absolute;
       top: calc(100% + 10px);
-      right: -35px;
+      right: -15px;
       box-shadow: 0px 0px 12px 0 rgba($color: #000000, $alpha: .2);
       width: 400px;
-      max-width: 350px;
-      z-index: 101;
       &::before{
         content: "";
         border: 10px solid transparent {
@@ -247,7 +249,7 @@ nav{
         };
         position: absolute;
         bottom: 100%;
-        right: 30px;
+        right: 12px;
       }
       &.expanded{
         display: block;
@@ -351,11 +353,6 @@ nav{
     &__left{
       position: static;
     }
-    &__search{
-      &-input{
-        left: 0;
-      }
-    }
     &__buttons, &__list{
       display: none;
     }
@@ -374,6 +371,31 @@ nav{
     &__account-info{
       display: none;
     }
+    &__notifications, &__messages{
+      &-body{
+        width: 300px;
+      }
+    }
   }
 
+}
+
+@media (max-width: 578px){
+  .nav{
+    &__left{
+      position: static;
+    }
+    &__search{
+      &-input{
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        &.expanded{
+          width: calc(100vw - 130px);
+        }
+      }
+    }
+  }
 }

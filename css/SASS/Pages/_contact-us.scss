@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .contact-us-main{
-  margin-top: 96px;
   padding: 200px 0;
   background-color: black;
   &__title{
@@ -327,9 +326,6 @@
 }
 
 @media (max-width: 991px) {
-  .contact-us-main{
-    margin-top: 72px;
-  }
   .page-posts{
     &__list{
       overflow: hidden;

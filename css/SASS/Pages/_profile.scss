@@ -2,7 +2,6 @@
 @use '../Layout/global_content' as *;
 
 .profile-page{
-  margin-top: 96px;
   min-height: calc(100vh - 120px);
   .tab-content{
     display: none;
@@ -150,7 +149,5 @@
 }
 
 @media (max-width: 991px) {
-  .profile-page{
-    margin-top: 72px;
-  }
+  
 }

@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .helpdesk-page{
-  margin-top: 96px;
   background-color: #FAFBFD;
 }
 
@@ -120,7 +119,5 @@
 
 
 @media (max-width: 991px) {
-  .helpdesk-page{
-    margin-top: 72px;
-  }
+  
 }

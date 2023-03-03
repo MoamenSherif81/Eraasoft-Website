@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .single-blog-header{
-  margin-top: 96px;
   height: 470px;
   img{
     object-fit: cover;
@@ -76,8 +75,5 @@
 
 
 @media (max-width: 991px) {
-  .single-blog-header{
-    margin-top: 72px;
-  }
-
+  
 }

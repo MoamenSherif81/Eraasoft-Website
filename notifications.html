@@ -16,6 +16,54 @@
   </head>
   <body>
 
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="header__right d-flex gap-4 align-items-center">
+          <div class="nav__messages">
+            <div class="nav__messages-icon nav__messages-icon">
+              <i class="fa-solid fa-inbox "></i>
+            </div>
+            <div class="nav__messages-body">
+              <div class="nav__messages-title">الرسائل</div>
+              <div class="nav__messages-list">
+                <div class="nav__messages-no-noti text-center">ليس لديك رسائل الأن.</div>
+              </div>
+              <div class="nav__messages-more text-center">
+                <a href="messages.html">عرض الوارد<i class="fa-solid fa-angle-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="nav__notifications">
+            <div class="nav__notifications-icon">
+              <i class="fa-regular fa-bell  "></i>
+            </div>
+            <div class="nav__notifications-body">
+              <div class="nav__notifications-title">الإشعارات</div>
+              <div class="nav__notifications-list">
+                <div class="nav__notifications-no-noti text-center">ليس لديك أي إشعارات.</div>
+              </div>
+              <div class="nav__notifications-more text-center">
+                <a href="notifications.html">عرض الإشعارات <i class="fa-solid fa-angle-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="nav__search">
+            <span class="nav__search-icon center--content">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div class="nav__search-input">
+              <form action="">
+                <input type="text" placeholder="بحث...">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header__left">
+          (+20) 106 8268 354
+        </div>
+      </div>
+    </header>
+
     <nav>
       <div class="container-fluid container-md">
         <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
@@ -28,38 +76,10 @@
           <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
             <li class="nav__item"><a href="index.html">الرئيسية</a></li>
             <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
-              <a href="courses.html">الدورات<i class="fa-solid fa-caret-down ms-2"></i></a>
-              <div class="nav__dropdown-cont nav__courses-cont" data-id="1">
-                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
-                  <h1 class="nav__dropdown-title bold">أشهر الدورات</h1>
-                  <div class="nav__dropdown-more">
-                    <a href="" class="center--content gap-2">
-                      المذيد من الدورات<i class="fa-solid fa-arrow-left"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="nav__courses">
-                  <div class="row">
-                  </div>
-                </div>
-              </div>
+              <a href="courses.html">الدورات</a>
             </li>
             <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
-              <a href="blogs.html">المدونه<i class="fa-solid fa-caret-down ms-2"></i></a>
-              <div class="nav__dropdown-cont nav__blogs-cont" data-id="2">
-                <div class="nav__dropdown-header mb-3 d-flex justify-content-between align-items-center">
-                  <h1 class="nav__dropdown-title bold">أشهر المدونات</h1>
-                  <div class="nav__dropdown-more">
-                    <a href="" class="center--content gap-2">
-                      تابع المذيد<i class="fa-solid fa-arrow-left"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="nav__blogs">
-                  <div class="row">
-                  </div>
-                </div>
-              </div>
+              <a href="blogs.html">المدونه</a>
             </li>
               
             <li class="nav__item"><a class="" href="who.html">من نحن</a></li>
@@ -113,19 +133,7 @@
             </ul>
           </div>
           <div class="nav__left d-flex align-items-center gap-3">
-            <div class="nav__search">
-              <span class="nav__search-icon center--content">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
-              <div class="nav__search-input">
-                <form action="">
-                  <input type="text" placeholder="بحث...">
-                </form>
-                <span class="nav__search-close center--content">
-                  <i class="fa-regular fa-circle-xmark"></i>
-                </span>
-              </div>
-            </div>
+            
           </div>
         </div>
         <!-- End Nav -->

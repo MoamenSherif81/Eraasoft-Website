@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .video-page-main{
-  margin-top: 96px;
   display: flex;
   position: relative;
   .sidebar-button{
@@ -209,7 +208,6 @@
 
 @media (max-width: 991px){
   .video-page-main{
-    margin-top: 72px;
     display: block;
     .course-content{
       position: fixed;

@@ -5,8 +5,10 @@ let navMobile = $('.nav__mobile')
 $('.nav__side-nav-icon').click(toggleNav);
 $('.nav__mobile-side-close').click(toggleNav);
 
-$('.nav__search-icon').click(() => $('.nav__search-input').fadeIn())
-$('.nav__search-close').click(() => $('.nav__search-input').fadeOut())
+$('.nav__search-icon').click(() => {
+  console.log('Yes');
+  $('.nav__search-input').toggleClass('expanded');
+})
 
 $(window).on('resize', () => {
   if($('body').innerWidth() >= 975){
@@ -22,12 +24,12 @@ function toggleNav(){
     $('html').css({'overflow':'hidden'})
     $(document.body).css({'overflow':'hidden'})
     navMobile.attr('expanded', 'true');
-    $('nav').css({'position':'fixed'});
+    $('nav').css({'position':'fixed', 'z-index':'101'});
   } else {
     $('html').css({'overflow':'visible'})
     $(document.body).css({'overflow':'visible'})
     navMobile.attr('expanded', 'false');
-    $('nav').css({'position':'sticky'});
+    $('nav').css({'position':'sticky', 'z-index':'100'});
   }
   navMobile.toggleClass('expanded');
 }
@@ -119,6 +121,8 @@ if(!loggedin){
   <a href="login.html" class="button--secondary">تسجيل الدخول</a>
   <a href="signup.html" class="button--primary">انشئ حساب</a>
   `
+  $('.nav__messages').remove();
+  $('.nav__notifications').remove();
 } else {
   newDiv.className = 'nav__account';
   newDiv.innerHTML = 

@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .blogs-header{
-  margin-top: 96px;
   padding: 100px 0;
   background-image: url('../../../assets/images/2.svg');
   background-color: black;
@@ -94,7 +93,5 @@
 }
 
 @media (max-width: 991px) {
-  .blogs-header{
-    margin-top: 72px;
-  }
+  
 }

@@ -1,13 +1,10 @@
 @use '../Layout/variables' as *;
 @use '../Layout/global_content' as *;
 
-
-
 .notifications{
   &-body{
     min-height: 80vh;
     padding-top: 30px;
-    margin-top: 96px;
   }
   &__header{
     padding-bottom: 10px;
@@ -38,7 +35,5 @@
 }
 
 @media (max-width: 991px){
-  .notifications-body{
-    margin-top: 72px;
-  }
+  
 }

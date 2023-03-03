@@ -2,7 +2,6 @@
 @use '../Layout/variables' as *;
 
 .courses{
-  margin-top: 96px;
   background-color: #fafafc;
   padding: 70px 0;
   &__title{
@@ -190,7 +189,5 @@
 }
 
 @media (max-width: 991px) {
-  .courses{
-    margin-top: 72px;
-  }
+  
 }
