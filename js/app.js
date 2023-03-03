@@ -22,10 +22,12 @@ function toggleNav(){
     $('html').css({'overflow':'hidden'})
     $(document.body).css({'overflow':'hidden'})
     navMobile.attr('expanded', 'true');
+    $('nav').css({'position':'fixed'});
   } else {
     $('html').css({'overflow':'visible'})
     $(document.body).css({'overflow':'visible'})
     navMobile.attr('expanded', 'false');
+    $('nav').css({'position':'sticky'});
   }
   navMobile.toggleClass('expanded');
 }
@@ -76,80 +78,6 @@ Tabs.prototype.activeTab = function(tab) {
   });
 }
 
-//Get the nav courses info
-$.getJSON('Data/courses.json', (courses) => {
-  let cnt = 0;
-  for(course of courses){
-    if(cnt++ == 6) return;
-    let card = document.createElement('div');
-    $(card).addClass('col-4');
-    card.innerHTML = 
-    `
-    <div class="nav__course">
-      <a class="nav__course-img" href="single-course.html?courseId=${course.id}">
-        <img class="card-img-top w-100" src="assets/images/${course.image}" alt="">
-      </a>
-      <div class="nav__course-title">
-        <a href="single-course.html?courseId=${course.id}">${course.title}</a>
-      </div>
-    </div>
-    `
-    $('.nav__courses').find('.row').append(card);
-  }
-});
-
-$.getJSON('Data/courses.json', (courses) => {
-  let cnt = 0;
-  for(course of courses){
-    if(cnt++ == 6) return;
-    const card = document.createElement('div');
-    $(card).addClass('col-4');
-    card.innerHTML = 
-    `
-    <div class="nav__course">
-      <a class="nav__course-img" href="single-course.html?courseId=${course.id}">
-        <img class="card-img-top w-100" src="assets/images/${course.image}" alt="">
-      </a>
-      <div class="nav__course-title">
-        <a href="single-course.html?courseId=${course.id}">${course.title}</a>
-      </div>
-    </div>
-    `
-    $('.nav__blogs').find('.row').append(card);
-  }
-});
-
-
-//nav__dropdown-cont
-let tempTime;
-const dropdownConts = $('.nav__dropdown-cont');
-$('.nav__item--hoverable').hover((e) => {
-  const item = $(e.target).closest('.nav__item ');
-  let curr, prev = -1;
-  for(let i = 0; i < dropdownConts.length; i++){
-    if($(dropdownConts[i]).attr('data-id') == item.attr('target-id'))
-      curr = i;
-    else
-      if($(dropdownConts[i]).hasClass('appear')) prev = i;
-  }
-  $(dropdownConts[curr]).addClass('appear');
-  if(prev == -1){
-    $(dropdownConts[curr]).fadeIn();
-  } else {
-    $(dropdownConts[prev]).removeClass('appear');
-    $(dropdownConts[prev]).fadeOut(() => {
-      $(dropdownConts[curr]).fadeIn()
-    })
-  }
-}, () => {
-
-  setTimeout(() => {
-    $(dropdownConts).removeClass('appear');
-    $(dropdownConts).stop();
-    $(dropdownConts).fadeOut();
-  }, 200);
-})
-
 let reply = document.createElement('li');
 reply.className = 'comments__new';
 reply.innerHTML = `
@@ -196,34 +124,6 @@ if(!loggedin){
   newDiv.innerHTML = 
   `
   <div class="nav__account">
-    <div class="nav__messages">
-      <div class="nav__messages-icon nav__messages-icon">
-        <i class="fa-solid fa-inbox text-muted"></i>
-      </div>
-      <div class="nav__messages-body">
-        <div class="nav__messages-title">الرسائل</div>
-        <div class="nav__messages-list">
-          <div class="nav__messages-no-noti text-center">ليس لديك رسائل الأن.</div>
-        </div>
-        <div class="nav__messages-more text-center">
-          <a href="messages.html">عرض الوارد<i class="fa-solid fa-angle-left"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="nav__notifications">
-      <div class="nav__notifications-icon">
-        <i class="fa-regular fa-bell text-muted"></i>
-      </div>
-      <div class="nav__notifications-body">
-        <div class="nav__notifications-title">الإشعارات</div>
-        <div class="nav__notifications-list">
-          <div class="nav__notifications-no-noti text-center">ليس لديك أي إشعارات.</div>
-        </div>
-        <div class="nav__notifications-more text-center">
-          <a href="notifications.html">عرض الإشعارات <i class="fa-solid fa-angle-left"></i></a>
-        </div>
-      </div>
-    </div>
     <div class="nav__account-info align-items-center gap-2">
       <div class="nav__account-name-cont">
         <span class="nav__account-name">Moamen Sherif</span>
