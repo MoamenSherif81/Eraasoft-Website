@@ -23,13 +23,13 @@ function toggleNav(){
   if(navMobile.attr('expanded') == 'false'){
     $('html').css({'overflow':'hidden'})
     $(document.body).css({'overflow':'hidden'})
-    navMobile.attr('expanded', 'true');
     $('nav').css({'position':'fixed', 'z-index':'101'});
+    navMobile.attr('expanded', 'true');
   } else {
     $('html').css({'overflow':'visible'})
     $(document.body).css({'overflow':'visible'})
-    navMobile.attr('expanded', 'false');
     $('nav').css({'position':'sticky', 'z-index':'100'});
+    navMobile.attr('expanded', 'false');
   }
   navMobile.toggleClass('expanded');
 }
