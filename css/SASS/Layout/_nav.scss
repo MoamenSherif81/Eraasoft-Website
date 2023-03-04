@@ -387,13 +387,13 @@ nav{
     }
     &__search{
       &-input{
-        left: 0;
+        left: 5px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         overflow: hidden;
         &.expanded{
-          width: calc(100vw - 130px);
+          width: calc(100vw - 135px);
         }
       }
     }

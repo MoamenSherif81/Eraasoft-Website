@@ -40,13 +40,18 @@ function calcVideoHeight(video){
 
 class Tabs{
   constructor(tabs, tabsContent, select){
+    //initialize the main variables
     this.tabs = $(tabs);
     this.tabsContent = tabsContent;
+    //Tab click event
     this.tabs.click((e) => {
       if($(e.target.closest(tabs)).hasClass('active')) return;
       this.activeTab(e.target.closest(tabs))
     })
+    //Activate the first tab
     this.activeTab(this.tabs[0]);
+
+    //Check if the tabsystem hav select dropdown
     if(select != undefined){
       this.select = select;
       this.tabs.click((e) => {

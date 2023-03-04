@@ -1,117 +1,9 @@
 @use '../Layout/global_content' as *;
 @use '../Layout/variables' as *;
 
-.main-section{
-  background-image: url("../assets/images/Ask.png");
-  background-position: center right;
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-color: black;
-  padding: 130px 0;
-  &__video{
-    cursor: pointer;
-    &:hover .main-section__play-button{
-      border: 4px solid rgba($color: white, $alpha: 1);
-      color: rgba($color: white, $alpha: 1);
-    }
-  }
-  &__play-button{
-    padding: 20px;
-    border: 4px solid rgba($color: white, $alpha: .8);
-    border-radius: 50%;
-    color: rgba($color: white, $alpha: .8);
-    width: 80px;
-    height: 80px;
-    box-shadow: 0px 0px 10px 0px black;
-    font-size: 30px;
-    transition: .3s;
-  }
-  &__title{
-    color: white;
-    font-size:62px;
-    font-family: "Expo Arabic Bold";
-    position: relative;
-    &--blue{
-      font-family: "Expo Arabic Bold";
-      color: #23cedb;
-    }
-    @media (max-width: 1200px){
-      font-size:45px;
-    }
-    @media (max-width: 768px){
-      font-size: 35px;
-    }
-  }
-  
-  &__iframe{
-    display: none;
-  }
-  &__text-cont{
-    font-size: 20px;
-    h1{
-      color: white;
-    }
-    @media (max-width: 768px){
-      font-size: 15px;
-    }
-  }
-  &__text{
-    text-align: justify;
-    position: relative;
-  }
-  &__buttons{
-    font-size: 20px;
-    display: flex;
-    .button{
-      &--primary{
-        background-color: $main-color;
-        color: white;
-        margin-left: 15px;
-        &:hover{
-          background-color: white;
-          color: $main-color;
-        }
-      }
-      &--secondary{
-        background-color: $main-color-light;
-        color: white;
-        &:hover{
-          background-color: $main-color;
-        }
-      }
-    }
-    @media (max-width: 1200px){
-      .button{
-        &--primary{
-          font-size: 18px;
-        }
-        &--secondary{
-          width: fit-content;
-          font-size: 18px;
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      .button{
-        width: fit-content;
-        &--primary{
-          margin-left: 0;
-          margin-bottom: 20px;
-          width: fit-content;
-        }
-        &--secondary{
-          width: fit-content;
-        }
-      }
-    }
-  }
-}
-
 .home-main{
   background: {
-    image: url(../assets/images/coding-blog-post-jan-17.jpg);
+    image: url('../assets/images/coding-blog-post-jan-17.jpg');
     size: cover;
     repeat: no-repeat;
     position: center;
@@ -156,15 +48,6 @@
     top: 0;
     left: 0;
   }
-  @media (max-width: 991px) {
-    padding: 70px 15px;
-    &__title{
-      font-size: 40px;
-    }
-    &__text{
-      font-size: 18px;
-    }
-  }
 }
 
 .strategy{
@@ -189,7 +72,7 @@
 }
 
 .reviews{
-  background-image:url('../../../assets/images/section2-background.svg');
+  background-image:url('../assets/images/section2-background.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -721,29 +604,15 @@ footer, .footer{
 }
 
 @media (max-width: 991px) {
-  .main-section{
-    height: auto;
-    padding: 70px 0;
-    background-image: none;
+  .home-main{
+    padding: 100px 15px;
     &__title{
-      text-align: center;
-      font-size:55px;
-      margin-bottom: 30px;
+      font-size: 40px;
     }
-    &__text-cont{
-      margin-bottom: 40px;
-    }
-    &__buttons{
-      text-align: center;
-      justify-content: center;
-      .button{
-        &--primary{
-          margin-left: 30px;
-        }
-      }
+    &__text{
+      font-size: 18px;
     }
   }
-
   .reviews{
     &__title{
       font-size: 30px;

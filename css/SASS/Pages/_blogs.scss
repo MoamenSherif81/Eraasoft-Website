@@ -3,7 +3,7 @@
 
 .blogs-header{
   padding: 100px 0;
-  background-image: url('../../../assets/images/2.svg');
+  background-image: url('../assets/images/2.svg');
   background-color: black;
   background-size: cover;
   background-position: right;
@@ -93,5 +93,12 @@
 }
 
 @media (max-width: 991px) {
-  
+  .blogs-header{
+    &__title{
+      font-size: 45px;
+    }
+    &__sub-title{
+      font-size: 20px;
+    }
+  }
 }
