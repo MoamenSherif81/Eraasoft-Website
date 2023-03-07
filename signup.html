@@ -9,35 +9,160 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="center--content flex-column" style="background-color: #fbfafd;">
-    <section class="signup-header">
-      <a class="logo" href="index.html"><img src="assets/images/eraasoft.png" alt=""></a>
-    </section>
-    <main class="signup">
-      <form action="" class="signup__form d-flex flex-column">
-        <label for="">البريد</label>
-        <input class="signup__input" type="email" name="email" id="">
-        <label for="email">تاكيد البريد</label>
-        <input class="signup__input" type="email" name="email-confirm" id="">
-        <label for="email-confirm">كلمة المرور</label>
-        <input class="signup__input" type="password" name="password" id="">
-        <label for="password">تاكيد كلمة المرور</label>
-        <input class="signup__input" type="password" name="password-confirm" id="">
-        <label for="password-confirm">الاسم الأول</label>
-        <input class="signup__input" type="text" name="" id="">
-        <label for="password-confirm">الاسم الأخير</label>
-        <input class="signup__input" type="text" name="" id="">
-        <label for="">أسم المستخدم</label>
-        <input class="signup__input" type="text" name="" id="">
-        <div class="signup__terms">
-          <label for="">
-            <input type="checkbox" name="" id="">
-            أنا اوافق علي بنود الخدمة و سياسة الخصوصيه
-          </label>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="header__right d-flex gap-4 align-items-center">
+          <div class="nav__messages">
+            <div class="nav__messages-icon nav__messages-icon">
+              <i class="fa-solid fa-inbox "></i>
+            </div>
+            <div class="nav__messages-body">
+              <div class="nav__messages-title">الرسائل</div>
+              <div class="nav__messages-list">
+                <div class="nav__messages-no-noti text-center">ليس لديك رسائل الأن.</div>
+              </div>
+              <div class="nav__messages-more text-center">
+                <a href="messages.html">عرض الوارد<i class="fa-solid fa-angle-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="nav__notifications">
+            <div class="nav__notifications-icon">
+              <i class="fa-regular fa-bell  "></i>
+            </div>
+            <div class="nav__notifications-body">
+              <div class="nav__notifications-title">الإشعارات</div>
+              <div class="nav__notifications-list">
+                <div class="nav__notifications-no-noti text-center">ليس لديك أي إشعارات.</div>
+              </div>
+              <div class="nav__notifications-more text-center">
+                <a href="notifications.html">عرض الإشعارات <i class="fa-solid fa-angle-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="nav__search">
+            <span class="nav__search-icon center--content">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div class="nav__search-input">
+              <form action="">
+                <input type="text" placeholder="بحث...">
+              </form>
+            </div>
+          </div>
         </div>
-        <input type="submit" class="signup__submit button--primary" value="أنشئ حساب">
-      </form>
-    </main>
+        <div class="header__left">
+          (+20) 106 8268 354
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container-fluid container-md">
+        <div class="nav d-flex flex-nowrap gap-2 justify-content-between">
+          <div class="nav__side-nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+          </div>
+          <ul class="nav__list list-unstyled align-items-center m-0 gap-4 ft--18">
+            <li class="nav__item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav__item nav__courses-item nav__item--hoverable" target-id="1">
+              <a href="courses.html">الدورات</a>
+            </li>
+            <li class="nav__item nav__blogs-item nav__item--hoverable" target-id="2">
+              <a href="blogs.html">المدونه</a>
+            </li>
+              
+            <li class="nav__item"><a class="" href="who.html">من نحن</a></li>
+            <li class="nav__item"><a class="" href="contact-us.html">تواصل معنا</a></li>
+          </ul>
+          <div class="nav__mobile" expanded="false">
+            <div class="nav__mobile-header d-flex">
+              <div class="nav__mobile-side-logo">
+                <a href="index.html"><img src="assets/images/eraasoft.png"/></a>
+              </div>
+              <div class="nav__mobile-side-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <ul class="nav__mobile-list list-unstyled">
+              <li class="nav__mobile-item">
+                <a href="index.html" class="">
+                  <i class="fa-solid fa-house nav__mobile-icon"></i> الرئيسية
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="courses.html" class="">
+                  <i class="fa-solid fa-book"></i> الدورات
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="blogs.html" class="">
+                  <i class="fa-solid fa-pen"></i> المدونة
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="who.html" class="">
+                  <i class="fa-solid fa-people-group"></i> من نحن
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="contact-us.html" class="">
+                  <i class="fa-regular fa-message"></i> تواصل معنا
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="login.html" class="">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول
+                </a>
+              </li>
+              <li class="nav__mobile-item">
+                <a href="signup.html" class="">
+                  <i class="fa-solid fa-user-plus"></i> التسجيل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__left d-flex align-items-center gap-3">
+            
+          </div>
+        </div>
+        <!-- End Nav -->
+      </div>
+    </nav>
+    <div class="center--content flex-column page" style="background-color: #fbfafd;">
+      <section class="signup-header">
+        <a class="logo" href="index.html"><img src="assets/images/eraasoft.png" alt=""></a>
+      </section>
+      <main class="signup">
+        <form action="" class="signup__form d-flex flex-column">
+          <label for="">البريد</label>
+          <input class="signup__input" type="email" name="email" id="">
+          <label for="email">تاكيد البريد</label>
+          <input class="signup__input" type="email" name="email-confirm" id="">
+          <label for="email-confirm">كلمة المرور</label>
+          <input class="signup__input" type="password" name="password" id="">
+          <label for="password">تاكيد كلمة المرور</label>
+          <input class="signup__input" type="password" name="password-confirm" id="">
+          <label for="password-confirm">الاسم الأول</label>
+          <input class="signup__input" type="text" name="" id="">
+          <label for="password-confirm">الاسم الأخير</label>
+          <input class="signup__input" type="text" name="" id="">
+          <label for="">أسم المستخدم</label>
+          <input class="signup__input" type="text" name="" id="">
+          <div class="signup__terms">
+            <label for="">
+              <input type="checkbox" name="" id="">
+              أنا اوافق علي بنود الخدمة و سياسة الخصوصيه
+            </label>
+          </div>
+          <input type="submit" class="signup__submit button--primary" value="أنشئ حساب">
+        </form>
+      </main>
+    </div>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>

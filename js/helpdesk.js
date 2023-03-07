@@ -6,12 +6,10 @@ const tabsContainer = $('.help-questions__tabs-system');
 
 tabHeaders.click((e) => {
   const item = $(e.target).closest('.help-questions__tabs-item');
-  toggleTab(item);
+  toggleTab(item, true);
 });
 
-toggleTab(tabItems.eq(0));
-
-function toggleTab(tab) {
+function toggleTab(tab, ind) {
   const header = tab.find('.help-questions__tabs-header');
   const tabLists = $('.help-questions__tabs-list');
   const currList = tab.find('.help-questions__tabs-list');
@@ -25,20 +23,58 @@ function toggleTab(tab) {
     tabItems.attr('list-active', 'false');
     tabLists.height(0);
   }
+  activeHeader(header, ind);
+}
+
+function activeHeader(header, ind){
   if (!header.hasClass('active')) {
     tabHeaders.removeClass('active');
     header.addClass('active');
+  }
+  let head = $(header.closest('.help-questions__category'));
+  if(!head.length) 
+    head = $(header.closest('.help-questions__tabs-item'));
+  const id = head.attr('target-id');
+  if(ind){
+    toggleSubTab(id ,0);
   }
 }
 
 let helpTabSystem = new Tabs('.help-questions__tabs-item', tabBodies);
 
-$('.help-questions__category-header').click(function() {
-  mainContainer.fadeOut('fast', () => {
-    tabsContainer.fadeIn('fast', () => tabsContainer.css('display', 'flex'));
+function toggleSubTab(catID, itemID){
+  const categoryCont = $('.help-questions__tabs-body').filter(`[data-id="${catID}"]`);  
+  const categoryItems = categoryCont.find('.help-questions__sub-tabs-item');
+  let item = categoryItems.filter(`[data-id="${itemID}"]`);
+  let prevItem = categoryItems.filter(`[tab-active="true"]`);
+  prevItem.attr('tab-active', 'false');
+  item.attr('tab-active', 'true');
+  prevItem.fadeOut(() => {
+    item.fadeIn();
   })
-  const tab = tabItems.filter(`[target-id="${$(this).attr('target-id')}"]`);
-  tab.click();
-  if(!tab.attr('list-active') === 'false')
-    tab.find('.help-questions__tabs-header').click();
+}
+
+$('.help-questions__item').click(function() {
+  let head = $(this.closest('.help-questions__category'));
+  if(!head.length) head = $(this.closest('.help-questions__tabs-item'));
+  const id = head.attr('target-id');
+  activeContainer(id, false);
+  $('.help-questions__item').removeClass('active');
+  $(this).addClass('active');
+  toggleSubTab(id, $(this).attr('target-id'));
 })
+
+$('.help-questions__category-header').click(function() {
+  activeContainer($(this).attr('target-id'), true);
+})
+
+function activeContainer(id, ind){
+  mainContainer.fadeOut('fast', () => {
+    tabsContainer.fadeIn('fast', () => {
+      tabsContainer.css('display', 'flex')
+      const tab = tabItems.filter(`[target-id="${id}"]`);
+      tabItems.attr('list-active', 'false');
+      toggleTab(tab, ind);
+    });
+  })
+}
