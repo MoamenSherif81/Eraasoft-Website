@@ -43,6 +43,7 @@ class Tabs{
     //initialize the main variables
     this.tabs = $(tabs);
     this.tabsContent = tabsContent;
+    this.timeout;
     //Tab click event
     this.tabs.click((e) => {
       if($(e.target.closest(tabs)).hasClass('active')) return;
@@ -71,18 +72,23 @@ class Tabs{
 //A function to activate a given tab in the main section
 Tabs.prototype.activeTab = function(tab) {
   //make the tab active and remove the active from the rest
-  $(this.tabs).removeClass('active');
-  $(tab).addClass('active');
-  //search for the needed and the prev active tab
-  const currTab = $(this.tabsContent).filter(`[data-id="${$(tab).attr('target-id')}"]`);
-  const prevTab = $(this.tabsContent).filter(`[tab-active="true"]`);
-  //switch the active attributes in the tabs cont
-  prevTab.attr('tab-active', 'false');
-  currTab.attr('tab-active', 'true');
-  //Change tha actual tab by fade animation
-  prevTab.fadeOut('fast', () => {
-    currTab.fadeIn();
-  });
+  clearTimeout(this.timeout);
+  this.timeout = setTimeout(() => {
+    $(this.tabsContent).stop(true, false);
+    $(this.tabsContent).fadeOut();
+    $(this.tabs).removeClass('active');
+    $(tab).addClass('active');
+    //search for the needed and the prev active tab
+    const currTab = $(this.tabsContent).filter(`[data-id="${$(tab).attr('target-id')}"]`);
+    const prevTab = $(this.tabsContent).filter(`[tab-active="true"]`);
+    //switch the active attributes in the tabs cont
+    prevTab.attr('tab-active', 'false');
+    currTab.attr('tab-active', 'true');
+    //Change tha actual tab by fade animation
+    prevTab.fadeOut('fast', () => {
+      currTab.fadeIn();
+    });
+  }, 100)
 }
 
 let reply = document.createElement('li');
