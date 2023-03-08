@@ -197,3 +197,39 @@ $(document).click((e) => {
     }
   }
 })
+
+$(document).ready(() => {
+  const observedElements = document.querySelectorAll('.animated');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const item = entry.target;
+        const direction = $(item).attr('animation-dir');
+        item.classList.add('animate');
+        switch(direction){
+          case 'bottom':
+            item.style.animationName = 'animateBottom';
+            break;
+          case 'right':
+            item.style.animationName = 'animateRight';
+            break;
+          case 'left':
+            item.style.animationName = 'animateLeft';
+            break;
+          case 'top':
+            item.style.animationName = 'animateTop';
+            break;
+          case 'popOut':
+            item.style.animationName = 'popOut';
+            break;
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  observedElements.forEach(ele => {
+    observer.observe(ele);
+  })
+})

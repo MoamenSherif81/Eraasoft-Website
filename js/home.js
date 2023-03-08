@@ -1,9 +1,8 @@
-let videoIframe = $('.main-section__iframe');
+let videoIframe = $('.strategy__iframe');
 let questions = $('.questions__answer-cont');
 
-$('.main-section__video').click(() => {
-  //main-section__iframe
-  $('.main-section__video-placeholder').fadeOut(() => {
+$('.strategy__video').click(() => {
+  $('.strategy__video-placeholder').fadeOut(() => {
     videoIframe.attr('src', videoIframe.attr('data-src'));
     videoIframe.fadeIn();
   })
@@ -36,17 +35,24 @@ var swiper = new Swiper(".reviews__slider", {
 $(document).ready(() => {
   toggleFAQ(questions[0]);
 })
+
 $('.questions__single-title').click((e) => {
   let id = $(e.target).attr('targetId');
   for(let i = 0; i < questions.length; i++){
     if($(questions[i]).attr('id') == id || $(questions[i]).attr('expanded') == 'true'){
       toggleFAQ(questions[i]);
+    } else {
+      $(questions[i]).hide();
+      $(questions[i]).off('transitionend');
+      $(questions[i]).attr('expanded', 'false');
     }
   }
 });
 
 function toggleFAQ(question){
+  
   if($(question).attr('expanded') == 'false'){
+    $(question).off('transitionend');
     $(question).show();
     let height = $(question).find('.questions__answer').prop('scrollHeight') + 48;
     $(question).css({'height': height + 'px', 'padding': '20px 20px'});
@@ -62,3 +68,20 @@ function toggleFAQ(question){
     $(question).closest('.questions__item').find('.questions__sign2').addClass('active');
   }
 }
+
+
+const statNumbers = document.querySelector('.statistics');
+
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      statNumbers.querySelectorAll('.statistics__number').forEach((ele) => {
+        const odometer = new Odometer({el: ele, format: 'd'})
+        ele.innerHTML = $(ele).attr('number');
+      })
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+observer2.observe(statNumbers);

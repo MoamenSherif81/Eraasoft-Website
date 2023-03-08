@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الرئيسية - منصة ايرا سوفت</title>
+    <link rel="stylesheet" href="css/odometer-theme-default.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css"
@@ -166,8 +167,14 @@
     <section class="site-sec strategy">
       <div class="container-fluid container-md">
         <div class="row align-items-center">
-          <div class="col-12 col-lg-6">
-            <img src="assets/images/main-1.png" class="w-100" alt="">
+          <div class="strategy__video col-12 col-lg-6 position-relative">
+            <div class="strategy__video-placeholder">
+              <img src="assets/images/Video.png" class="w-100" alt="">
+              <div class="strategy__play-button position-absolute center--self center--content">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <iframe class="strategy__iframe w-100" data-src="//www.youtube.com/embed/2jT4Zto8gs8?autoplay=1" frameborder="0" allowfullscreen=""></iframe></iframe>
           </div>
           <div class="col-12 col-lg-6 ft--20 px-4 line-45">
             <p class="strategy__text">
@@ -299,7 +306,7 @@
     <section class="features line-45">
       <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
-          <div class="features__image col-12 col-lg-6">
+          <div class="features__image col-12 col-lg-6 animated" animation-dir="popOut">
             <img src="assets/images/main-2.png" class="" alt="">
           </div>
           <div class="col-12 col-lg-6">
@@ -320,7 +327,7 @@
     <section class="instructors">
       <div class="container-fluid container-md">
         <div class="instructors__list">
-          <div class="instructors__cont">
+          <div class="instructors__cont animated" animation-dir="bottom">
             <div class="instructors__image">
               <img src="assets/images/student-1.jpg" alt="">
             </div>
@@ -329,7 +336,7 @@
               <h4 class="instructors__role">مدير مهندس البرمجيات</h4>
             </div>
           </div>
-          <div class="instructors__cont">
+          <div class="instructors__cont animated" animation-dir="bottom">
             <div class="instructors__image">
               <img src="assets/images/student-3.jpg" alt="">
             </div>
@@ -338,7 +345,7 @@
               <h4 class="instructors__role">مدير مهندس البرمجيات</h4>
             </div>
           </div>
-          <div class="instructors__cont">
+          <div class="instructors__cont animated" animation-dir="bottom">
             <div class="instructors__image">
               <img src="assets/images/student-4.jpg" alt="">
             </div>
@@ -362,7 +369,7 @@
         <div class="row justify-content-between align-items-stretch">
           <h1 class="why__title bold">لماذا ايرا سوفت!</h1>
           <div class="why__group col-lg-4 d-flex flex-column justify-content-between">
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="right">
               <div class="why__icon">
                 <i class="fa-regular fa-clock"></i>
               </div>
@@ -375,7 +382,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="right">
               <div class="why__icon">
                 <i class="fa-solid fa-link"></i>
               </div>
@@ -388,7 +395,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="right">
               <div class="why__icon">
                 <i class="fa-solid fa-laptop-code"></i>
               </div>
@@ -401,7 +408,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="right">
               <div class="why__icon">
                 <i class="fa-solid fa-child-reaching"></i>
               </div>
@@ -414,7 +421,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="right">
               <div class="why__icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
@@ -428,11 +435,11 @@
               </div>
             </div>
           </div>
-          <div class="why__img col-lg-3 d-flex justify-content-center align-items-center">
+          <div class="why__img col-lg-3 d-flex justify-content-center align-items-center animated" animation-dir="popOut">
             <img src="assets/images/main-3.png" class="w-100" alt="">
           </div>
           <div class="why__group col-lg-4 d-flex flex-column justify-content-between">
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="left">
               <div class="why__icon">
                 <i class="fa-solid fa-ranking-star"></i>
               </div>
@@ -445,7 +452,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="left">
               <div class="why__icon">
                 <i class="fa-solid fa-copy"></i>
               </div>
@@ -458,7 +465,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="left">
               <div class="why__icon">
                 <i class="fa-solid fa-people-group"></i>
               </div>
@@ -471,7 +478,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="left">
               <div class="why__icon">
                 <i class="fa-regular fa-comment-dots"></i>
               </div>
@@ -484,7 +491,7 @@
                 </div>
               </div>
             </div>
-            <div class="why__cont d-flex gap-3">
+            <div class="why__cont d-flex gap-3 animated" animation-dir="left">
               <div class="why__icon">
                 <i class="fa-regular fa-calendar-days"></i>
               </div>
@@ -505,7 +512,7 @@
     <section class="goals line-45">
       <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
-          <div class="goals__img col-12 col-lg-6 center--content">
+          <div class="goals__img col-12 col-lg-6 center--content animated" animation-dir="popOut">
             <img src="assets/images/main-4.png" class="w-100" alt="">
           </div>
           <div class="col-12 col-lg-6 px-4 line-45">
@@ -527,12 +534,12 @@
             <p class="goals-2__text line-45">
               هدفنا في ايرا سوفت دعم شغفك ومساندتك كي ندفعك لمواصلة النجاح وعدم التوقف في منتصف الطريق قبل الوصول إلى هدفك. ايرا سوفت بيتك الثاني حيث نوفر لك العديد من عوامل النجاح والموثوقية. ايرا سوفت تضمن لك :
             </p>
-            <div class="goals-2__img center--content">
+            <div class="goals-2__img center--content animated" animation-dir="popOut">
               <img src="assets/images/main-5.png" class="" alt="">
             </div>
           </div>
           <div class="goals-2__left col-lg-6">
-            <div class="goals-2__cont d-flex gap-3">
+            <div class="goals-2__cont d-flex gap-3 animated" animation-dir="left">
               <div class="goals-2__icon">
                 <i class="fa-regular fa-clock"></i>
               </div>
@@ -545,7 +552,7 @@
                 </div>
               </div>
             </div>
-            <div class="goals-2__cont d-flex gap-3">
+            <div class="goals-2__cont d-flex gap-3 animated" animation-dir="left">
               <div class="goals-2__icon">
                 <i class="fa-solid fa-certificate"></i>
               </div>
@@ -558,7 +565,7 @@
                 </div>
               </div>
             </div>
-            <div class="goals-2__cont d-flex gap-3">
+            <div class="goals-2__cont d-flex gap-3 animated" animation-dir="left"">
               <div class="goals-2__icon">
                 <i class="fa-regular fa-calendar-check"></i>
               </div>
@@ -571,7 +578,7 @@
                 </div>
               </div>
             </div>
-            <div class="goals-2__cont d-flex gap-3">
+            <div class="goals-2__cont d-flex gap-3 animated" animation-dir="left">
               <div class="goals-2__icon">
                 <i class="fa-solid fa-child-reaching"></i>
               </div>
@@ -592,7 +599,7 @@
     <section class="features-2 line-45">
       <div class="container-fluid container-md">
         <div class="row align-items-center flex-row-reverse">
-          <div class="features__image col-12 col-lg-6">
+          <div class="features__image col-12 col-lg-6 animated" animation-dir="popOut">
             <img src="assets/images/main-6.png" class="" alt="">
           </div>
           <div class="col-12 col-lg-6">
@@ -626,28 +633,28 @@
             <div class="statistics__icon">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <div class="statistics__number bold">6210 +</div>
+            <div class="statistics__number bold odo1" number="6210"><span>6210</span> +</div>
             <div class="statistics__text">طالب</div>
           </div>
           <div class="col-6 col-md-3">
             <div class="statistics__icon">
               <i class="fa-regular fa-clock"></i>
             </div>
-            <div class="statistics__number bold">19425 +</div>
+            <div class="statistics__number bold odo2" number="19425">19425 +</div>
             <div class="statistics__text">ساعة دراسية</div>
           </div>
           <div class="col-6 col-md-3">
             <div class="statistics__icon">
               <i class="fa-solid fa-certificate"></i>
             </div>
-            <div class="statistics__number bold">569 +</div>
+            <div class="statistics__number bold odo3" number="569">569 +</div>
             <div class="statistics__text">منحة</div>
           </div>
           <div class="col-6 col-md-3">
             <div class="statistics__icon">
               <i class="fa-solid fa-rocket"></i>
             </div>
-            <div class="statistics__number bold">437 +</div>
+            <div class="statistics__number bold odo4" number="437">437 +</div>
             <div class="statistics__text">مشروع</div>
           </div>
         </div>
@@ -661,7 +668,7 @@
 
     <section class="ask">
       <div class="container-fluid container-md">
-        <div class="ask__card row">
+        <div class="ask__card row animated" animation-dir="popOut">
           <div class="col-md-5 col-lg-4 ask__card-right">
             <h2 class="ask__right-title bold">
               لديك استفسار؟
@@ -868,6 +875,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/odometer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

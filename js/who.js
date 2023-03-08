@@ -23,9 +23,8 @@ $(document).ready(() => {
 
 function feelHeights(){
   let maxiHeight = 0;
-  for(let i = 0; i < feelConts.length; i++){
+  for(let i = 0; i < feelConts.length; i++)
     maxiHeight = Math.max(maxiHeight, $(feelConts[i]).height());
-  }
   feelConts.height(maxiHeight);
 }
 

@@ -88,3 +88,54 @@ select{
   border: 0.5px solid rgba($color: #c1c1c1, $alpha: .5);
   font-size: 14px;
 }
+
+.animated{
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.animate{
+  opacity: 1;
+  animation-duration: 1s;
+}
+
+@keyframes animateBottom {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+@keyframes animateTop {
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+@keyframes animateRight {
+  from{
+    transform: translateX(100px);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+@keyframes animateLeft {
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+@keyframes popOut{
+  from{
+    transform: scale(.5);
+  }
+  to{
+    transform: scale(1);
+  }
+}
