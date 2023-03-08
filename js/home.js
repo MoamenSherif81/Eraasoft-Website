@@ -79,7 +79,7 @@ const observer2 = new IntersectionObserver((entries) => {
         const odometer = new Odometer({el: ele, format: 'd'})
         ele.innerHTML = $(ele).attr('number');
       })
-      observer.unobserve(entry.target);
+      observers.unobserve(entry.target);
     }
   });
 });
